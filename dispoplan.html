@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="de">
 <head>
@@ -5,57 +6,1496 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="color-scheme" content="light">
 <title>Sand-Körner GmbH | Online-Dispoplan</title>
+
 <style>
-:root{font-family:Inter,Arial,sans-serif;color:#20213a;background:#f5f6fa;--navy:#08055f;--navy2:#171275;--pale:#eeeff9;--pale2:#f7f7fc;--muted:#707185;--line:#e2e3ed;--white:#fff;--shadow:0 8px 28px #10104b0a}
-*{box-sizing:border-box}body{margin:0}button,input,textarea{font:inherit}a{color:inherit;text-decoration:none}button{cursor:pointer}.top{background:var(--navy);color:white;padding:15px clamp(16px,4vw,42px);display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}.brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.7px}.brand-mark{width:34px;height:34px;border:2px solid #fff;border-radius:9px;display:grid;place-items:center;font-size:16px}.brand small{display:block;font-size:9px;letter-spacing:1.4px;color:#d9d9f3;font-weight:500;margin-top:3px}.nav{display:flex;gap:8px;flex-wrap:wrap}.nav a,.nav button{border:1px solid #ffffff50;background:#ffffff12;color:white;border-radius:8px;padding:9px 12px;font-size:11px;font-weight:650}.nav a:hover,.nav button:hover{background:#ffffff24}main{max-width:1500px;margin:auto;padding:26px clamp(12px,3vw,36px) 52px}.intro{display:flex;justify-content:space-between;align-items:end;gap:18px;flex-wrap:wrap;margin-bottom:17px}.eyebrow{font-size:10px;letter-spacing:1.6px;font-weight:750;color:var(--navy2)}h1{font-size:clamp(25px,3vw,35px);letter-spacing:-1px;margin:7px 0}.sub{max-width:790px;color:var(--muted);font-size:13px;line-height:1.6}.week-picker{display:flex;align-items:center;gap:8px;background:white;border:1px solid var(--line);padding:9px 12px;border-radius:9px;color:var(--navy);font-size:11px;font-weight:700}.week-picker input{border:0;background:transparent;color:var(--navy);font-weight:700;font-size:13px;min-width:145px;outline:0}.card{background:var(--white);border:1px solid var(--line);border-radius:12px;padding:18px;margin-bottom:14px;box-shadow:var(--shadow)}.tabs{display:flex;gap:7px;overflow:auto;padding-bottom:2px}.tab{border:1px solid var(--line);background:white;color:#595a70;border-radius:8px;padding:9px 13px;font-size:12px;font-weight:700;white-space:nowrap}.tab.active{background:var(--navy);border-color:var(--navy);color:white}.tab:hover:not(.active){background:var(--pale2);color:var(--navy)}.banner{padding:11px 14px;border-radius:9px;background:var(--pale);color:var(--navy);font-size:12px;margin:10px 0 14px;line-height:1.5}.banner.error{background:#fff0ef;color:#9b302c}.banner.good{background:#eef7f1;color:#326344}.section-title{display:flex;justify-content:space-between;align-items:center;gap:12px;margin:16px 0 10px}.section-title h2{font-size:15px;color:var(--navy);margin:0}.date-chip{font-size:11px;font-weight:700;color:var(--navy);background:var(--pale);border-radius:20px;padding:6px 10px}.meta-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}.field{display:flex;flex-direction:column;gap:5px;min-width:0}.field label{font-size:10px;color:var(--muted);font-weight:700}.field input,.field textarea,.grid-input{width:100%;min-width:0;border:1px solid #d9dbea;border-radius:6px;padding:8px 9px;color:#24243a;background:white;font-size:12px;outline:none}.field input:focus,.field textarea:focus,.grid-input:focus{border-color:var(--navy2);box-shadow:0 0 0 2px #17127518}.field textarea{resize:vertical;min-height:43px}.needs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px}.need{display:flex;align-items:center;justify-content:space-between;gap:7px;padding:9px 10px;background:var(--pale2);border:1px solid var(--line);border-radius:8px;font-size:11px;color:#44455d}.need input{width:75px;border:1px solid #d9dbea;border-radius:6px;padding:6px 7px;text-align:center;font-size:12px;color:var(--navy)}.table-wrap{width:100%;overflow:auto;border:1px solid var(--line);border-radius:8px}table{width:100%;border-collapse:collapse;min-width:840px;font-size:11px}th{background:var(--navy);color:white;text-align:left;padding:9px 8px;font-size:10px;font-weight:700;position:sticky;top:0}td{padding:5px 6px;border-bottom:1px solid var(--line);background:white}tr:nth-child(even) td{background:#fafaff}tr:last-child td{border-bottom:0}.grid-input{padding:7px 7px;font-size:11px;border-color:#e5e5ee}.grid-input.type{min-width:200px}.day-notes{display:grid;grid-template-columns:1fr 1fr;gap:12px}.notes-box{border:1px solid var(--line);border-radius:8px;padding:11px;background:var(--pale2)}.notes-box strong{font-size:11px;color:var(--navy)}.notes-box textarea{display:block;width:100%;margin-top:8px;min-height:80px;border:1px solid #d9dbea;border-radius:6px;padding:8px;font-size:11px;resize:vertical}.weekly-summary{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-bottom:14px}.week-table{min-width:700px}.footer-note{font-size:10px;color:var(--muted);margin:12px 2px;line-height:1.6}.hidden{display:none!important}.gate{max-width:650px;margin:50px auto;padding:24px;background:white;border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow)}.gate h2{color:var(--navy);margin:0 0 8px}.gate p{font-size:13px;color:var(--muted);line-height:1.6}.gate a{display:inline-flex;margin-top:14px;padding:10px 13px;background:var(--navy);color:white;border-radius:8px;font-size:12px;font-weight:700}.save-dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:#999;margin-right:6px}.save-dot.ok{background:#34a267}.save-dot.busy{background:#dfaa3b}.foot{display:flex;justify-content:space-between;gap:12px;align-items:center;color:var(--muted);font-size:10px;margin-top:10px}.no-print{}
-@media(max-width:900px){.meta-grid,.weekly-summary{grid-template-columns:repeat(2,minmax(0,1fr))}.needs{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media(max-width:600px){main{padding:20px 12px 38px}.top{padding:13px 14px}.day-notes{grid-template-columns:1fr}.meta-grid,.weekly-summary{grid-template-columns:1fr 1fr}.intro{align-items:flex-start}.week-picker{width:100%;justify-content:space-between}.week-picker input{flex:1}.card{padding:13px}.needs{gap:7px}.need{font-size:10px;padding:8px}}
-@media print{body{background:white}.top,.tabs,.week-picker,.footer-note,.no-print{display:none!important}main{max-width:none;padding:0}.card{box-shadow:none;border:1px solid #bbb;break-inside:avoid}.table-wrap{overflow:visible}table{min-width:0;font-size:8px}.grid-input,.field input,.field textarea,.notes-box textarea{border:0;padding:2px}.grid-input.type{min-width:0}.banner{display:none}}
+:root{
+  font-family:Inter,Arial,sans-serif;
+  color:#20213a;
+  background:#f5f6fa;
+  --navy:#08055f;
+  --navy2:#171275;
+  --pale:#eeeff9;
+  --pale2:#f7f7fc;
+  --muted:#707185;
+  --line:#e2e3ed;
+  --white:#fff;
+  --shadow:0 8px 28px #10104b0a
+}
+*{box-sizing:border-box}
+body{margin:0}
+button,input,textarea{font:inherit}
+a{color:inherit;text-decoration:none}
+button{cursor:pointer}
+
+.top{
+  background:var(--navy);
+  color:white;
+  padding:15px clamp(16px,4vw,42px);
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:16px;
+  flex-wrap:wrap
+}
+.brand{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  font-weight:800;
+  letter-spacing:.7px
+}
+.brand img{
+  width:54px;
+  height:54px;
+  object-fit:contain;
+  background:white;
+  border-radius:8px;
+  padding:3px
+}
+.brand small{
+  display:block;
+  font-size:9px;
+  letter-spacing:1.4px;
+  color:#d9d9f3;
+  font-weight:500;
+  margin-top:3px
+}
+.nav{display:flex;gap:8px;flex-wrap:wrap}
+.nav button{
+  border:1px solid #ffffff50;
+  background:#ffffff12;
+  color:white;
+  border-radius:8px;
+  padding:9px 12px;
+  font-size:11px;
+  font-weight:650
+}
+.nav button:hover{background:#ffffff24}
+
+main{
+  max-width:1500px;
+  margin:auto;
+  padding:26px clamp(12px,3vw,36px) 52px
+}
+.intro{
+  display:flex;
+  justify-content:space-between;
+  align-items:end;
+  gap:18px;
+  flex-wrap:wrap;
+  margin-bottom:17px
+}
+.eyebrow{
+  font-size:10px;
+  letter-spacing:1.6px;
+  font-weight:750;
+  color:var(--navy2)
+}
+h1{
+  font-size:clamp(25px,3vw,35px);
+  letter-spacing:-1px;
+  margin:7px 0
+}
+.sub{
+  max-width:790px;
+  color:var(--muted);
+  font-size:13px;
+  line-height:1.6
+}
+.week-picker{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  background:white;
+  border:1px solid var(--line);
+  padding:9px 12px;
+  border-radius:9px;
+  color:var(--navy);
+  font-size:11px;
+  font-weight:700
+}
+.week-picker input{
+  border:0;
+  background:transparent;
+  color:var(--navy);
+  font-weight:700;
+  font-size:13px;
+  min-width:145px;
+  outline:0
+}
+.card{
+  background:var(--white);
+  border:1px solid var(--line);
+  border-radius:12px;
+  padding:18px;
+  margin-bottom:14px;
+  box-shadow:var(--shadow)
+}
+.tabs{
+  display:flex;
+  gap:7px;
+  overflow:auto;
+  padding-bottom:2px
+}
+.tab{
+  border:1px solid var(--line);
+  background:white;
+  color:#595a70;
+  border-radius:8px;
+  padding:9px 13px;
+  font-size:12px;
+  font-weight:700;
+  white-space:nowrap
+}
+.tab.active{
+  background:var(--navy);
+  border-color:var(--navy);
+  color:white
+}
+.tab:hover:not(.active){
+  background:var(--pale2);
+  color:var(--navy)
+}
+.banner{
+  padding:11px 14px;
+  border-radius:9px;
+  background:var(--pale);
+  color:var(--navy);
+  font-size:12px;
+  margin:10px 0 14px;
+  line-height:1.5
+}
+.banner.error{background:#fff0ef;color:#9b302c}
+.banner.good{background:#eef7f1;color:#326344}
+.section-title{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:12px;
+  margin:16px 0 10px
+}
+.section-title h2{font-size:15px;color:var(--navy);margin:0}
+.date-chip{
+  font-size:11px;
+  font-weight:700;
+  color:var(--navy);
+  background:var(--pale);
+  border-radius:20px;
+  padding:6px 10px
+}
+.meta-grid{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:10px
+}
+.field{
+  display:flex;
+  flex-direction:column;
+  gap:5px;
+  min-width:0
+}
+.field label{
+  font-size:10px;
+  color:var(--muted);
+  font-weight:700
+}
+.field input,.field textarea,.grid-input{
+  width:100%;
+  min-width:0;
+  border:1px solid #d9dbea;
+  border-radius:6px;
+  padding:8px 9px;
+  color:#24243a;
+  background:white;
+  font-size:12px;
+  outline:none
+}
+.field input:focus,.field textarea:focus,.grid-input:focus{
+  border-color:var(--navy2);
+  box-shadow:0 0 0 2px #17127518
+}
+.field textarea{resize:vertical;min-height:43px}
+.needs{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:9px
+}
+.need{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:7px;
+  padding:9px 10px;
+  background:var(--pale2);
+  border:1px solid var(--line);
+  border-radius:8px;
+  font-size:11px;
+  color:#44455d
+}
+.need input{
+  width:75px;
+  border:1px solid #d9dbea;
+  border-radius:6px;
+  padding:6px 7px;
+  text-align:center;
+  font-size:12px;
+  color:var(--navy)
+}
+.table-wrap{
+  width:100%;
+  overflow:auto;
+  border:1px solid var(--line);
+  border-radius:8px
+}
+table{
+  width:100%;
+  border-collapse:collapse;
+  min-width:840px;
+  font-size:11px
+}
+th{
+  background:var(--navy);
+  color:white;
+  text-align:left;
+  padding:9px 8px;
+  font-size:10px;
+  font-weight:700;
+  position:sticky;
+  top:0
+}
+td{
+  padding:5px 6px;
+  border-bottom:1px solid var(--line);
+  background:white
+}
+tr:nth-child(even) td{background:#fafaff}
+tr:last-child td{border-bottom:0}
+.grid-input{
+  padding:7px;
+  font-size:11px;
+  border-color:#e5e5ee
+}
+.grid-input.type{min-width:200px}
+.day-notes{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px
+}
+.notes-box{
+  border:1px solid var(--line);
+  border-radius:8px;
+  padding:11px;
+  background:var(--pale2)
+}
+.notes-box strong{font-size:11px;color:var(--navy)}
+.notes-box textarea{
+  display:block;
+  width:100%;
+  margin-top:8px;
+  min-height:80px;
+  border:1px solid #d9dbea;
+  border-radius:6px;
+  padding:8px;
+  font-size:11px;
+  resize:vertical
+}
+.weekly-summary{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:10px;
+  margin-bottom:14px
+}
+.week-table{min-width:700px}
+.footer-note{
+  font-size:10px;
+  color:var(--muted);
+  margin:12px 2px;
+  line-height:1.6
+}
+.hidden{display:none!important}
+.save-dot{
+  display:inline-block;
+  width:8px;
+  height:8px;
+  border-radius:50%;
+  background:#999;
+  margin-right:6px
+}
+.save-dot.ok{background:#34a267}
+.save-dot.busy{background:#dfaa3b}
+.foot{
+  display:flex;
+  justify-content:space-between;
+  gap:12px;
+  align-items:center;
+  color:var(--muted);
+  font-size:10px;
+  margin-top:10px
+}
+.action-buttons{
+  display:flex;
+  gap:8px;
+  flex-wrap:wrap;
+  margin:12px 0
+}
+.action-button{
+  border:0;
+  border-radius:8px;
+  padding:11px 15px;
+  font-size:12px;
+  font-weight:700;
+  background:var(--navy);
+  color:white
+}
+.action-button:hover{background:var(--navy2)}
+.action-button.secondary{
+  background:#eef0fa;
+  color:var(--navy);
+  border:1px solid #d9dbea
+}
+.action-button.secondary:hover{background:#e2e5f5}
+#exportArea{display:none}
+
+@media(max-width:900px){
+  .meta-grid,.weekly-summary{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .needs{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:600px){
+  main{padding:20px 12px 38px}
+  .top{padding:13px 14px}
+  .day-notes{grid-template-columns:1fr}
+  .meta-grid,.weekly-summary{grid-template-columns:1fr 1fr}
+  .intro{align-items:flex-start}
+  .week-picker{width:100%;justify-content:space-between}
+  .week-picker input{flex:1}
+  .card{padding:13px}
+  .needs{gap:7px}
+  .need{font-size:10px;padding:8px}
+  .brand img{width:45px;height:45px}
+}
+@media print{
+  @page{size:A4 landscape;margin:12mm}
+  body{background:white}
+  .top{display:none!important}
+  #app>*:not(#exportArea){display:none!important}
+  #exportArea{
+    display:block!important;
+    max-width:none;
+    padding:0;
+    color:#222;
+    font-family:Arial,sans-serif
+  }
+  #exportArea .report-header{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    border-bottom:3px solid #08055f;
+    padding-bottom:12px;
+    margin-bottom:15px
+  }
+  #exportArea .report-header img{
+    width:75px;
+    height:65px;
+    object-fit:contain
+  }
+  #exportArea h1{font-size:22px;color:#08055f}
+  #exportArea h2{
+    font-size:15px;
+    color:#08055f;
+    margin:18px 0 7px
+  }
+  #exportArea table{
+    width:100%;
+    min-width:0;
+    font-size:8px;
+    border-collapse:collapse;
+    margin-bottom:12px
+  }
+  #exportArea th{
+    background:#08055f!important;
+    color:white!important;
+    padding:6px;
+    position:static
+  }
+  #exportArea td{
+    border:1px solid #ccc;
+    padding:5px;
+    background:white!important
+  }
+  #exportArea .report-notes{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:12px;
+    margin-bottom:15px
+  }
+  #exportArea .report-note{
+    border:1px solid #ccc;
+    padding:8px;
+    min-height:45px;
+    white-space:pre-wrap;
+    font-size:9px
+  }
+  #exportArea .report-day{break-inside:avoid}
+  #exportArea .report-footer{
+    font-size:8px;
+    color:#666;
+    margin-top:15px
+  }
+}
 </style>
 </head>
+
 <body>
-<header class="top"><div class="brand"><span class="brand-mark">S</span><span>Sand-Körner GmbH<small>DISPOSITION · ONLINE-DISPOPLAN</small></span></div><nav class="nav"><button id="printButton" type="button">Drucken / PDF</button></nav></header>
+
+<header class="top">
+  <div class="brand">
+    <img src="sand%20logo.png" alt="Sand-Körner Logo">
+    <span>
+      Sand-Körner GmbH
+      <small>DISPOSITION · ONLINE-DISPOPLAN</small>
+    </span>
+  </div>
+  <nav class="nav">
+    <button id="printButton" type="button">PDF herunterladen</button>
+    <button id="wordButton" type="button">Word herunterladen</button>
+  </nav>
+</header>
+
 <main id="app">
-<section class="intro"><div><div class="eyebrow">DISPOSITION · WOCHEN- UND TAGESPLANUNG</div><h1>Online-Dispoplan</h1><p class="sub">Trage Fahrzeuge, Fahrer, Kunden, Baustellen, Preise und Wochenbedarf direkt online ein. Änderungen werden gemeinsam in Firebase gespeichert und live synchronisiert.</p></div><label class="week-picker">Kalenderwoche <input id="weekPicker" type="week"></label></section>
-<div id="status" class="banner"><span class="save-dot"></span><span id="statusText">Öffentliches Formular wird verbunden …</span></div>
-<div class="banner error"><strong>Hinweis:</strong> Dieses Formular ist ohne Anmeldung erreichbar. Alle Personen mit Zugriff auf die Seite können die gemeinsamen Einträge lesen, ergänzen und ändern. Bitte keine vertraulichen oder personenbezogenen Daten eintragen.</div>
-<section class="card"><div class="tabs" id="tabs"></div></section>
+
+<section class="intro">
+  <div>
+    <div class="eyebrow">DISPOSITION · WOCHEN- UND TAGESPLANUNG</div>
+    <h1>Online-Dispoplan</h1>
+    <p class="sub">
+      Trage Fahrzeuge, Fahrer, Kunden, Baustellen, Preise und Wochenbedarf
+      direkt online ein. Änderungen werden automatisch gespeichert und
+      live synchronisiert.
+    </p>
+  </div>
+  <label class="week-picker">
+    Kalenderwoche
+    <input id="weekPicker" type="week">
+  </label>
+</section>
+
+<div id="status" class="banner">
+  <span class="save-dot"></span>
+  <span id="statusText">Online-Dispoplan wird verbunden …</span>
+</div>
+
+<div class="banner error">
+  <strong>Sicherheitshinweis:</strong>
+  Dieses Formular ist derzeit ohne Anmeldung erreichbar.
+  Alle Personen mit Zugriff auf die Seite können die gemeinsamen Einträge
+  lesen, ergänzen und ändern. Bitte keine vertraulichen oder personenbezogenen
+  Daten eintragen, solange keine Anmeldung und Zugriffsbeschränkung eingerichtet ist.
+</div>
+
+<div class="action-buttons no-print">
+  <button class="action-button" id="saveButton" type="button">
+    Jetzt speichern
+  </button>
+  <button class="action-button secondary" id="pdfButton" type="button">
+    PDF herunterladen
+  </button>
+  <button class="action-button secondary" id="wordButton2" type="button">
+    Word herunterladen
+  </button>
+</div>
+
+<section class="card">
+  <div class="tabs" id="tabs"></div>
+</section>
+
 <section id="dayView"></section>
 <section id="weekView" class="hidden"></section>
-<p class="footer-note">Die Eingaben werden automatisch gemeinsam online gespeichert. Dieses Formular und die zugehörigen Daten sind öffentlich erreichbar. Nicht für vertrauliche oder personenbezogene Informationen verwenden.</p>
-<div class="foot"><span>Sand-Körner GmbH · Online-Dispoplan</span><span id="updatedAt"></span></div>
-</main>
-<script type="module">
-import {initializeApp} from 'https://www.gstatic.com/firebasejs/12.19.0/firebase-app.js';
-import {getDatabase,ref,onValue,set,update} from 'https://www.gstatic.com/firebasejs/12.19.0/firebase-database.js';
 
-const firebaseConfig={apiKey:'AIzaSyDXTAVTeddKxwOp_C_2Z4lPY9yI5bAm0KM',authDomain:'ve-log.firebaseapp.com',databaseURL:'https://ve-log-default-rtdb.europe-west1.firebasedatabase.app',projectId:'ve-log',storageBucket:'ve-log.firebasestorage.app',messagingSenderId:'749978080433',appId:'1:749978080433:web:8f64ef99a557fe2346be90'};
-const days=[{id:'mo',name:'Montag',offset:0},{id:'di',name:'Dienstag',offset:1},{id:'mi',name:'Mittwoch',offset:2},{id:'do',name:'Donnerstag',offset:3},{id:'fr',name:'Freitag',offset:4}];
-const vehicleDefaults=['3-Achser Abroller-Kran-LKW','3-Achs-Absetzkipper','3-Achs-3-Seitenkipper / Tandemzug','3-Achs-3-Seitenkipper / Tandemzug','4-Achs-3-Seitenkipper','2-Achs-Hydrosattel','2-Achs-Hydrosattel','2-Achs-Hydrosattel','2-Achs-Sattel','Weitere Fahrzeuge','Weitere Fahrzeuge'];
-const app=initializeApp(firebaseConfig),db=getDatabase(app);
-const $=id=>document.getElementById(id); let activeTab='mo',weekKey='',weekData={},stopWeekListener=null;
-const weekPicker=$('weekPicker'); weekPicker.value=toIsoWeek(new Date());
-function toIsoWeek(date){const d=new Date(Date.UTC(date.getFullYear(),date.getMonth(),date.getDate()));d.setUTCDate(d.getUTCDate()+4-(d.getUTCDay()||7));const year=d.getUTCFullYear();const yearStart=new Date(Date.UTC(year,0,1));const week=Math.ceil((((d-yearStart)/86400000)+1)/7);return `${year}-W${String(week).padStart(2,'0')}`}
-function weekMonday(value){const [y,w]=value.split('-W').map(Number);const jan4=new Date(Date.UTC(y,0,4));const monday=new Date(jan4);monday.setUTCDate(jan4.getUTCDate()-((jan4.getUTCDay()+6)%7)+(w-1)*7);return monday}
-function dateFor(offset){const d=weekMonday(weekKey);d.setUTCDate(d.getUTCDate()+offset);return new Intl.DateTimeFormat('de-DE',{weekday:'short',day:'2-digit',month:'2-digit',year:'numeric',timeZone:'UTC'}).format(d)}
-function esc(v){return String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
-function value(path,fallback=''){let cur=weekData;for(const p of path.split('/'))cur=cur&&typeof cur==='object'?cur[p]:undefined;return cur===undefined||cur===null?fallback:cur}
-function setStatus(text,kind=''){const box=$('status');box.className='banner'+(kind?' '+kind:'');const dot=box.querySelector('.save-dot');dot.className='save-dot'+(kind==='good'?' ok':kind==='busy'?' busy':'');$('statusText').textContent=text}
-function input(path,label,placeholder='',fallback=''){return `<div class="field"><label>${esc(label)}</label><input data-path="${esc(path)}" value="${esc(value(path,fallback))}" placeholder="${esc(placeholder)}" autocomplete="off"></div>`}
-function textarea(path,placeholder='',rows=3){return `<textarea data-path="${esc(path)}" rows="${rows}" placeholder="${esc(placeholder)}">${esc(value(path))}</textarea>`}
-function buildTabs(){const host=$('tabs');host.innerHTML=days.map(d=>`<button class="tab ${activeTab===d.id?'active':''}" data-tab="${d.id}" type="button">${d.name}</button>`).join('')+`<button class="tab ${activeTab==='week'?'active':''}" data-tab="week" type="button">Wochenübersicht</button>`}
-function renderDay(id){const d=days.find(x=>x.id===id);if(!d)return;const base=`days/${id}`;let rows=vehicleDefaults.map((type,i)=>{const row=`${base}/vehicles/v${String(i+1).padStart(2,'0')}`;return `<tr><td><input class="grid-input type" data-path="${row}/type" value="${esc(value(`${row}/type`,type))}" aria-label="Fahrzeugtyp"></td><td><input class="grid-input" data-path="${row}/vehicle" value="${esc(value(`${row}/vehicle`))}" aria-label="Fahrzeug"></td><td><input class="grid-input" data-path="${row}/driver" value="${esc(value(`${row}/driver`))}" aria-label="Fahrer"></td><td><input class="grid-input" data-path="${row}/customer" value="${esc(value(`${row}/customer`))}" aria-label="Kunde oder Baustelle"></td><td><input class="grid-input" data-path="${row}/price" value="${esc(value(`${row}/price`))}" aria-label="Preis"></td><td><input class="grid-input" data-path="${row}/notes" value="${esc(value(`${row}/notes`))}" aria-label="Hinweise"></td></tr>`}).join('');
-$('dayView').innerHTML=`<section class="card"><div class="section-title"><h2>${d.name} · Fahrzeugeinsatz</h2><span class="date-chip">${dateFor(d.offset)}</span></div><div class="meta-grid">${input(`${base}/planner`,'Disposition','Name / Kürzel')}${input(`${base}/grube`,'Grube','Zuständigkeit')}${input(`${base}/mize`,'MiZE','Zuständigkeit')}${input(`${base}/planB`,'Plan-B / Hinweis','Reserveplanung oder Hinweis')}</div><div class="section-title"><h2>Fahrzeugbedarf</h2></div><div class="needs">${[['threeAxle','3-Achskipper'],['fourAxle','4-Achskipper'],['sattel','Sattel'],['gliederzug','Gliederzug']].map(([k,l])=>`<label class="need">${l}<input data-path="${base}/bedarf/${k}" value="${esc(value(`${base}/bedarf/${k}`))}" placeholder="Anzahl"></label>`).join('')}</div><div class="section-title"><h2>Fahrzeuge und Aufträge</h2><span class="sub">Felder anklicken und ausfüllen</span></div><div class="table-wrap"><table><thead><tr><th>Fahrzeugtyp</th><th>Fahrzeug</th><th>Fahrer</th><th>Kunde / Baustelle</th><th>Preis</th><th>Hinweise</th></tr></thead><tbody>${rows}</tbody></table></div></section><section class="card"><div class="section-title"><h2>Tagesabsprachen</h2></div><div class="day-notes"><div class="notes-box"><strong>Baustellen / Grube / MiZE</strong>${textarea(`${base}/siteNotes`,'Baustellen, Einsatzdetails und Absprachen …',4)}</div><div class="notes-box"><strong>Subunternehmer / Plan-B</strong>${textarea(`${base}/subcontractorNotes`,'Firma, Einsatz oder Ausweichplanung …',4)}</div></div></section>`}
-function renderWeeklyTable(kind,headers,rows){return `<div class="table-wrap"><table class="week-table"><thead><tr>${headers.map(h=>`<th>${h}</th>`).join('')}</tr></thead><tbody>${Array.from({length:rows},(_,i)=>{const row=`week/${kind}/r${String(i+1).padStart(2,'0')}`;return `<tr>${headers.map((h,j)=>`<td><input class="grid-input" data-path="${row}/c${j+1}" value="${esc(value(`${row}/c${j+1}`))}" aria-label="${esc(h)}"></td>`).join('')}</tr>`}).join('')}</tbody></table></div>`}
-function renderWeek(){ $('weekView').innerHTML=`<section class="card"><div class="section-title"><h2>Wochenübersicht</h2><span class="date-chip">${weekKey}</span></div><div class="weekly-summary">${input('week/planner','Disposition','Name / Kürzel')}${input('week/grubeMize','Grube / MiZE','Zuständigkeit')}${[['threeAxle','3-Achskipper'],['fourAxle','4-Achskipper'],['sattel','Sattel'],['gliederzug','Gliederzug']].map(([k,l])=>input(`week/bedarf/${k}`,l,'Anzahl')).join('')}</div><div class="section-title"><h2>Subunternehmer / Plan-B</h2></div>${renderWeeklyTable('subcontractors',['Firma','Ansprechpartner','Telefon','Einsatz / Notiz'],6)}<div class="section-title"><h2>Kundenliste / Kontakte</h2></div>${renderWeeklyTable('customers',['Kunde','Ansprechpartner','Telefon','Termin / Notiz'],9)}</section>`}
-function render(){buildTabs();if(activeTab==='week'){$('dayView').classList.add('hidden');$('weekView').classList.remove('hidden');renderWeek()}else{$('weekView').classList.add('hidden');$('dayView').classList.remove('hidden');renderDay(activeTab)}}
-function watchWeek(){if(stopWeekListener){stopWeekListener();stopWeekListener=null}weekKey=weekPicker.value||toIsoWeek(new Date());weekPicker.value=weekKey;weekData={};render();setStatus('Woche wird aus dem gemeinsamen Online-Dispoplan geladen …','busy');stopWeekListener=onValue(ref(db,`dispoplanPublic/${weekKey}`),snap=>{weekData=snap.val()||{};render();const stamp=weekData.updatedAt;if(stamp){const date=new Date(stamp);$('updatedAt').textContent='Zuletzt gespeichert: '+new Intl.DateTimeFormat('de-DE',{dateStyle:'short',timeStyle:'short'}).format(date)}else $('updatedAt').textContent='Noch keine gespeicherten Änderungen';setStatus('Online verbunden · Änderungen werden automatisch gespeichert und live synchronisiert.','good')},err=>{console.error(err);setStatus('Der Dispoplan konnte nicht geladen werden. Bitte Firebase-Regeln und Verbindung prüfen.','error')})}
-async function saveField(el){if(!weekKey)return;const path=el.dataset.path;if(!path||path.split('/').some(p=>p==='..'))return;const val=el.value;setStatus('Änderung wird öffentlich gespeichert …','busy');try{await set(ref(db,`dispoplanPublic/${weekKey}/${path}`),val);await update(ref(db,`dispoplanPublic/${weekKey}`),{updatedAt:Date.now()});setStatus('Gespeichert · für alle Personen mit dem Seitenlink sichtbar.','good')}catch(err){console.error(err);setStatus('Speichern nicht möglich. Bitte die veröffentlichten Firebase-Regeln prüfen.','error')}}
-$('tabs').addEventListener('click',e=>{const b=e.target.closest('[data-tab]');if(!b)return;activeTab=b.dataset.tab;render()});
+<!-- Dieser Bereich wird für PDF und Word mit der ganzen Woche gefüllt -->
+<section id="exportArea"></section>
+
+<p class="footer-note">
+  Die Eingaben werden automatisch in Firebase gespeichert.
+  Der Button „Jetzt speichern“ speichert zusätzlich alle Felder der
+  gerade geöffneten Ansicht.
+</p>
+
+<div class="foot">
+  <span>Sand-Körner GmbH · Online-Dispoplan</span>
+  <span id="updatedAt"></span>
+</div>
+
+</main>
+
+<script type="module">
+
+import {initializeApp}
+from 'https://www.gstatic.com/firebasejs/12.19.0/firebase-app.js';
+
+import {
+  getDatabase,
+  ref,
+  onValue,
+  set,
+  update
+}
+from 'https://www.gstatic.com/firebasejs/12.19.0/firebase-database.js';
+
+
+/* --------------------------------------------------
+   FIREBASE – PROJEKT SAND-K
+-------------------------------------------------- */
+
+const firebaseConfig = {
+  apiKey: "AIzaSyCQaFurCagEayr39WFiCmO1UXRQ61CiLVk",
+  authDomain: "sand-k.firebaseapp.com",
+  databaseURL: "https://sand-k-default-rtdb.firebaseio.com",
+  projectId: "sand-k",
+  storageBucket: "sand-k.firebasestorage.app",
+  messagingSenderId: "410773825979",
+  appId: "1:749978080433:web:f221e4a8719c247dd1bc9e",
+  measurementId: "G-L30N814CZE"
+};
+
+const firebaseApp = initializeApp(firebaseConfig);
+const db = getDatabase(firebaseApp);
+
+
+/* --------------------------------------------------
+   WOCHENTAGE – MONTAG BIS SONNTAG
+-------------------------------------------------- */
+
+const days = [
+  {id:'mo',name:'Montag',offset:0},
+  {id:'di',name:'Dienstag',offset:1},
+  {id:'mi',name:'Mittwoch',offset:2},
+  {id:'do',name:'Donnerstag',offset:3},
+  {id:'fr',name:'Freitag',offset:4},
+  {id:'sa',name:'Samstag',offset:5},
+  {id:'so',name:'Sonntag',offset:6}
+];
+
+const vehicleDefaults = [
+  '3-Achser Abroller-Kran-LKW',
+  '3-Achs-Absetzkipper',
+  '3-Achs-3-Seitenkipper / Tandemzug',
+  '3-Achs-3-Seitenkipper / Tandemzug',
+  '4-Achs-3-Seitenkipper',
+  '2-Achs-Hydrosattel',
+  '2-Achs-Hydrosattel',
+  '2-Achs-Hydrosattel',
+  '2-Achs-Sattel',
+  'Weitere Fahrzeuge',
+  'Weitere Fahrzeuge'
+];
+
+const $ = id => document.getElementById(id);
+
+let activeTab = 'mo';
+let weekKey = '';
+let weekData = {};
+let stopWeekListener = null;
+
+const weekPicker = $('weekPicker');
+weekPicker.value = toIsoWeek(new Date());
+
+
+/* --------------------------------------------------
+   KALENDERWOCHE UND DATUM
+-------------------------------------------------- */
+
+function toIsoWeek(date){
+  const d = new Date(Date.UTC(
+    date.getFullYear(),
+    date.getMonth(),
+    date.getDate()
+  ));
+
+  d.setUTCDate(d.getUTCDate() + 4 - (d.getUTCDay() || 7));
+
+  const year = d.getUTCFullYear();
+  const yearStart = new Date(Date.UTC(year,0,1));
+  const week = Math.ceil((((d-yearStart)/86400000)+1)/7);
+
+  return `${year}-W${String(week).padStart(2,'0')}`;
+}
+
+function weekMonday(value){
+  const [y,w] = value.split('-W').map(Number);
+  const jan4 = new Date(Date.UTC(y,0,4));
+  const monday = new Date(jan4);
+
+  monday.setUTCDate(
+    jan4.getUTCDate() -
+    ((jan4.getUTCDay()+6)%7) +
+    (w-1)*7
+  );
+
+  return monday;
+}
+
+function dateFor(offset){
+  const d = weekMonday(weekKey);
+  d.setUTCDate(d.getUTCDate()+offset);
+
+  return new Intl.DateTimeFormat('de-DE',{
+    weekday:'long',
+    day:'2-digit',
+    month:'2-digit',
+    year:'numeric',
+    timeZone:'UTC'
+  }).format(d);
+}
+
+
+/* --------------------------------------------------
+   HILFSFUNKTIONEN
+-------------------------------------------------- */
+
+function esc(v){
+  return String(v ?? '').replace(/[&<>"']/g,c=>({
+    '&':'&amp;',
+    '<':'&lt;',
+    '>':'&gt;',
+    '"':'&quot;',
+    "'":'&#39;'
+  }[c]));
+}
+
+function value(path,fallback=''){
+  let cur = weekData;
+
+  for(const p of path.split('/')){
+    cur = cur && typeof cur === 'object' ? cur[p] : undefined;
+  }
+
+  return cur === undefined || cur === null ? fallback : cur;
+}
+
+function setStatus(text,kind=''){
+  const box = $('status');
+  box.className = 'banner' + (kind ? ' '+kind : '');
+
+  const dot = box.querySelector('.save-dot');
+
+  dot.className = 'save-dot' +
+    (kind==='good' ? ' ok' : kind==='busy' ? ' busy' : '');
+
+  $('statusText').textContent = text;
+}
+
+function input(path,label,placeholder='',fallback=''){
+  return `
+    <div class="field">
+      <label>${esc(label)}</label>
+      <input
+        data-path="${esc(path)}"
+        value="${esc(value(path,fallback))}"
+        placeholder="${esc(placeholder)}"
+        autocomplete="off">
+    </div>
+  `;
+}
+
+function textarea(path,placeholder='',rows=3){
+  return `
+    <textarea
+      data-path="${esc(path)}"
+      rows="${rows}"
+      placeholder="${esc(placeholder)}">${esc(value(path))}</textarea>
+  `;
+}
+
+
+/* --------------------------------------------------
+   TABS
+-------------------------------------------------- */
+
+function buildTabs(){
+  const host = $('tabs');
+
+  host.innerHTML =
+    days.map(d=>`
+      <button
+        class="tab ${activeTab===d.id?'active':''}"
+        data-tab="${d.id}"
+        type="button">
+        ${d.name}
+      </button>
+    `).join('') +
+
+    `<button
+      class="tab ${activeTab==='week'?'active':''}"
+      data-tab="week"
+      type="button">
+      Wochenübersicht
+    </button>`;
+}
+
+
+/* --------------------------------------------------
+   TAGESANSICHT
+-------------------------------------------------- */
+
+function renderDay(id){
+
+  const d = days.find(x=>x.id===id);
+  if(!d) return;
+
+  const base = `days/${id}`;
+
+  const rows = vehicleDefaults.map((type,i)=>{
+
+    const row =
+      `${base}/vehicles/v${String(i+1).padStart(2,'0')}`;
+
+    return `
+      <tr>
+        <td>
+          <input class="grid-input type"
+            data-path="${row}/type"
+            value="${esc(value(`${row}/type`,type))}"
+            aria-label="Fahrzeugtyp">
+        </td>
+        <td>
+          <input class="grid-input"
+            data-path="${row}/vehicle"
+            value="${esc(value(`${row}/vehicle`))}"
+            aria-label="Fahrzeug">
+        </td>
+        <td>
+          <input class="grid-input"
+            data-path="${row}/driver"
+            value="${esc(value(`${row}/driver`))}"
+            aria-label="Fahrer">
+        </td>
+        <td>
+          <input class="grid-input"
+            data-path="${row}/customer"
+            value="${esc(value(`${row}/customer`))}"
+            aria-label="Kunde oder Baustelle">
+        </td>
+        <td>
+          <input class="grid-input"
+            data-path="${row}/price"
+            value="${esc(value(`${row}/price`))}"
+            aria-label="Preis">
+        </td>
+        <td>
+          <input class="grid-input"
+            data-path="${row}/notes"
+            value="${esc(value(`${row}/notes`))}"
+            aria-label="Hinweise">
+        </td>
+      </tr>
+    `;
+  }).join('');
+
+  $('dayView').innerHTML = `
+
+    <section class="card">
+
+      <div class="section-title">
+        <h2>${d.name} · Fahrzeugeinsatz</h2>
+        <span class="date-chip">${dateFor(d.offset)}</span>
+      </div>
+
+      <div class="meta-grid">
+
+        ${input(`${base}/planner`,'Disposition','Name / Kürzel')}
+
+        ${input(`${base}/grube`,'Grube','Zuständigkeit')}
+
+        ${input(`${base}/mize`,'MiZE','Zuständigkeit')}
+
+        ${input(`${base}/planB`,'Plan-B / Hinweis','Reserveplanung oder Hinweis')}
+
+      </div>
+
+      <div class="section-title">
+        <h2>Fahrzeugbedarf</h2>
+      </div>
+
+      <div class="needs">
+
+        ${[
+          ['threeAxle','3-Achskipper'],
+          ['fourAxle','4-Achskipper'],
+          ['sattel','Sattel'],
+          ['gliederzug','Gliederzug']
+        ].map(([k,l])=>`
+          <label class="need">
+            ${l}
+            <input
+              data-path="${base}/bedarf/${k}"
+              value="${esc(value(`${base}/bedarf/${k}`))}"
+              placeholder="Anzahl">
+          </label>
+        `).join('')}
+
+      </div>
+
+      <div class="section-title">
+        <h2>Fahrzeuge und Aufträge</h2>
+        <span class="sub">Felder anklicken und ausfüllen</span>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Fahrzeugtyp</th>
+              <th>Fahrzeug</th>
+              <th>Fahrer</th>
+              <th>Kunde / Baustelle</th>
+              <th>Preis</th>
+              <th>Hinweise</th>
+            </tr>
+          </thead>
+          <tbody>${rows}</tbody>
+        </table>
+      </div>
+
+    </section>
+
+    <section class="card">
+
+      <div class="section-title">
+        <h2>Tagesabsprachen</h2>
+      </div>
+
+      <div class="day-notes">
+
+        <div class="notes-box">
+          <strong>Baustellen / Grube / MiZE</strong>
+          ${textarea(`${base}/siteNotes`,'Baustellen, Einsatzdetails und Absprachen …',4)}
+        </div>
+
+        <div class="notes-box">
+          <strong>Subunternehmer / Plan-B</strong>
+          ${textarea(`${base}/subcontractorNotes`,'Firma, Einsatz oder Ausweichplanung …',4)}
+        </div>
+
+      </div>
+
+    </section>
+  `;
+}
+
+
+/* --------------------------------------------------
+   WOCHENÜBERSICHT
+-------------------------------------------------- */
+
+function renderWeeklyTable(kind,headers,rows){
+
+  return `
+    <div class="table-wrap">
+      <table class="week-table">
+        <thead>
+          <tr>${headers.map(h=>`<th>${h}</th>`).join('')}</tr>
+        </thead>
+        <tbody>
+          ${Array.from({length:rows},(_,i)=>{
+
+            const row = `week/${kind}/r${String(i+1).padStart(2,'0')}`;
+
+            return `
+              <tr>
+                ${headers.map((h,j)=>`
+                  <td>
+                    <input
+                      class="grid-input"
+                      data-path="${row}/c${j+1}"
+                      value="${esc(value(`${row}/c${j+1}`))}"
+                      aria-label="${esc(h)}">
+                  </td>
+                `).join('')}
+              </tr>
+            `;
+          }).join('')}
+        </tbody>
+      </table>
+    </div>
+  `;
+}
+
+function renderWeek(){
+
+  $('weekView').innerHTML = `
+
+    <section class="card">
+
+      <div class="section-title">
+        <h2>Wochenübersicht</h2>
+        <span class="date-chip">${weekKey}</span>
+      </div>
+
+      <div class="weekly-summary">
+
+        ${input('week/planner','Disposition','Name / Kürzel')}
+
+        ${input('week/grubeMize','Grube / MiZE','Zuständigkeit')}
+
+        ${[
+          ['threeAxle','3-Achskipper'],
+          ['fourAxle','4-Achskipper'],
+          ['sattel','Sattel'],
+          ['gliederzug','Gliederzug']
+        ].map(([k,l])=>input(`week/bedarf/${k}`,l,'Anzahl')).join('')}
+
+      </div>
+
+      <div class="section-title">
+        <h2>Subunternehmer / Plan-B</h2>
+      </div>
+
+      ${renderWeeklyTable(
+        'subcontractors',
+        ['Firma','Ansprechpartner','Telefon','Einsatz / Notiz'],
+        6
+      )}
+
+      <div class="section-title">
+        <h2>Kundenliste / Kontakte</h2>
+      </div>
+
+      ${renderWeeklyTable(
+        'customers',
+        ['Kunde','Ansprechpartner','Telefon','Termin / Notiz'],
+        9
+      )}
+
+    </section>
+  `;
+}
+
+
+/* --------------------------------------------------
+   RENDER
+-------------------------------------------------- */
+
+function render(){
+
+  buildTabs();
+
+  if(activeTab==='week'){
+
+    $('dayView').classList.add('hidden');
+    $('weekView').classList.remove('hidden');
+
+    renderWeek();
+
+  }else{
+
+    $('weekView').classList.add('hidden');
+    $('dayView').classList.remove('hidden');
+
+    renderDay(activeTab);
+  }
+}
+
+
+/* --------------------------------------------------
+   FIREBASE – WOCHE LADEN UND LIVE SYNCHRONISIEREN
+-------------------------------------------------- */
+
+function watchWeek(){
+
+  if(stopWeekListener){
+    stopWeekListener();
+    stopWeekListener = null;
+  }
+
+  weekKey = weekPicker.value || toIsoWeek(new Date());
+  weekPicker.value = weekKey;
+
+  weekData = {};
+
+  render();
+
+  setStatus('Woche wird aus dem Online-Dispoplan geladen …','busy');
+
+  stopWeekListener = onValue(
+    ref(db,`dispoplanPublic/${weekKey}`),
+
+    snap=>{
+
+      weekData = snap.val() || {};
+
+      render();
+
+      const stamp = weekData.updatedAt;
+
+      if(stamp){
+
+        const date = new Date(stamp);
+
+        $('updatedAt').textContent =
+          'Zuletzt gespeichert: ' +
+          new Intl.DateTimeFormat('de-DE',{
+            dateStyle:'short',
+            timeStyle:'short'
+          }).format(date);
+
+      }else{
+
+        $('updatedAt').textContent = 'Noch keine gespeicherten Änderungen';
+      }
+
+      setStatus(
+        'Online verbunden · Änderungen werden automatisch gespeichert und live synchronisiert.',
+        'good'
+      );
+    },
+
+    err=>{
+
+      console.error(err);
+
+      setStatus(
+        'Der Dispoplan konnte nicht geladen werden. Bitte Firebase-Regeln und Verbindung prüfen.',
+        'error'
+      );
+    }
+  );
+}
+
+
+/* --------------------------------------------------
+   AUTOMATISCH SPEICHERN
+-------------------------------------------------- */
+
+async function saveField(el){
+
+  if(!weekKey) return;
+
+  const path = el.dataset.path;
+
+  if(!path || path.split('/').some(p=>p==='..')) return;
+
+  const val = el.value;
+
+  setStatus('Änderung wird automatisch gespeichert …','busy');
+
+  try{
+
+    const updates = {};
+    updates[path] = val;
+    updates.updatedAt = Date.now();
+
+    await update(
+      ref(db,`dispoplanPublic/${weekKey}`),
+      updates
+    );
+
+    setStatus('Automatisch gespeichert.','good');
+
+  }catch(err){
+
+    console.error(err);
+
+    setStatus(
+      'Automatisches Speichern nicht möglich. Bitte Firebase-Regeln prüfen.',
+      'error'
+    );
+  }
+}
+
+
+/* --------------------------------------------------
+   MANUELL SPEICHERN
+   Speichert alle Felder der gerade geöffneten Ansicht.
+-------------------------------------------------- */
+
+async function saveAll(){
+
+  if(!weekKey) return;
+
+  const activeContainer =
+    activeTab === 'week' ? $('weekView') : $('dayView');
+
+  const fields = activeContainer.querySelectorAll('[data-path]');
+
+  const updates = {};
+
+  fields.forEach(el=>{
+
+    const path = el.dataset.path;
+
+    if(!path || path.split('/').some(p=>p==='..')) return;
+
+    updates[path] = el.value;
+  });
+
+  updates.updatedAt = Date.now();
+
+  setStatus('Alle Felder der geöffneten Ansicht werden gespeichert …','busy');
+
+  try{
+
+    await update(
+      ref(db,`dispoplanPublic/${weekKey}`),
+      updates
+    );
+
+    setStatus(
+      'Erfolgreich gespeichert · Die Daten sind online verfügbar.',
+      'good'
+    );
+
+  }catch(err){
+
+    console.error(err);
+
+    setStatus(
+      'Speichern fehlgeschlagen. Bitte Internetverbindung und Firebase-Regeln prüfen.',
+      'error'
+    );
+  }
+}
+
+
+/* --------------------------------------------------
+   BERICHT FÜR PDF UND WORD
+   Enthält immer alle sieben Wochentage.
+-------------------------------------------------- */
+
+function reportCell(text){
+  return `<td>${esc(text)}</td>`;
+}
+
+function makeReportHtml(){
+
+  const daysHtml = days.map(d=>{
+
+    const base = `days/${d.id}`;
+
+    const rows = vehicleDefaults.map((type,i)=>{
+
+      const row =
+        `${base}/vehicles/v${String(i+1).padStart(2,'0')}`;
+
+      return `
+        <tr>
+          ${reportCell(value(`${row}/type`,type))}
+          ${reportCell(value(`${row}/vehicle`))}
+          ${reportCell(value(`${row}/driver`))}
+          ${reportCell(value(`${row}/customer`))}
+          ${reportCell(value(`${row}/price`))}
+          ${reportCell(value(`${row}/notes`))}
+        </tr>
+      `;
+    }).join('');
+
+    return `
+      <div class="report-day">
+
+        <h2>${d.name} – ${dateFor(d.offset)}</h2>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Fahrzeugtyp</th>
+              <th>Fahrzeug</th>
+              <th>Fahrer</th>
+              <th>Kunde / Baustelle</th>
+              <th>Preis</th>
+              <th>Hinweise</th>
+            </tr>
+          </thead>
+          <tbody>${rows}</tbody>
+        </table>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Disposition</th>
+              <th>Grube</th>
+              <th>MiZE</th>
+              <th>Plan-B / Hinweis</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              ${reportCell(value(`${base}/planner`))}
+              ${reportCell(value(`${base}/grube`))}
+              ${reportCell(value(`${base}/mize`))}
+              ${reportCell(value(`${base}/planB`))}
+            </tr>
+          </tbody>
+        </table>
+
+        <table>
+          <thead>
+            <tr>
+              <th>3-Achskipper</th>
+              <th>4-Achskipper</th>
+              <th>Sattel</th>
+              <th>Gliederzug</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              ${reportCell(value(`${base}/bedarf/threeAxle`))}
+              ${reportCell(value(`${base}/bedarf/fourAxle`))}
+              ${reportCell(value(`${base}/bedarf/sattel`))}
+              ${reportCell(value(`${base}/bedarf/gliederzug`))}
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="report-notes">
+          <div class="report-note">
+            <strong>Baustellen / Grube / MiZE</strong><br>
+            ${esc(value(`${base}/siteNotes`))}
+          </div>
+          <div class="report-note">
+            <strong>Subunternehmer / Plan-B</strong><br>
+            ${esc(value(`${base}/subcontractorNotes`))}
+          </div>
+        </div>
+
+      </div>
+    `;
+  }).join('');
+
+  const subcontractors = Array.from({length:6},(_,i)=>{
+
+    const row = `week/subcontractors/r${String(i+1).padStart(2,'0')}`;
+
+    return `
+      <tr>
+        ${[1,2,3,4].map(c=>reportCell(value(`${row}/c${c}`))).join('')}
+      </tr>
+    `;
+  }).join('');
+
+  const customers = Array.from({length:9},(_,i)=>{
+
+    const row = `week/customers/r${String(i+1).padStart(2,'0')}`;
+
+    return `
+      <tr>
+        ${[1,2,3,4].map(c=>reportCell(value(`${row}/c${c}`))).join('')}
+      </tr>
+    `;
+  }).join('');
+
+  return `
+    <div class="report-header">
+      <img src="sand%20logo.png" alt="Sand-Körner Logo">
+      <div>
+        <h1>Sand-Körner GmbH – Online-Dispoplan</h1>
+        <p>Wochenplanung ${esc(weekKey)}</p>
+      </div>
+    </div>
+
+    <h2>Wochenübersicht</h2>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Disposition</th>
+          <th>Grube / MiZE</th>
+          <th>3-Achskipper</th>
+          <th>4-Achskipper</th>
+          <th>Sattel</th>
+          <th>Gliederzug</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          ${reportCell(value('week/planner'))}
+          ${reportCell(value('week/grubeMize'))}
+          ${reportCell(value('week/bedarf/threeAxle'))}
+          ${reportCell(value('week/bedarf/fourAxle'))}
+          ${reportCell(value('week/bedarf/sattel'))}
+          ${reportCell(value('week/bedarf/gliederzug'))}
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Subunternehmer / Plan-B</h2>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Firma</th>
+          <th>Ansprechpartner</th>
+          <th>Telefon</th>
+          <th>Einsatz / Notiz</th>
+        </tr>
+      </thead>
+      <tbody>${subcontractors}</tbody>
+    </table>
+
+    <h2>Kundenliste / Kontakte</h2>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Kunde</th>
+          <th>Ansprechpartner</th>
+          <th>Telefon</th>
+          <th>Termin / Notiz</th>
+        </tr>
+      </thead>
+      <tbody>${customers}</tbody>
+    </table>
+
+    ${daysHtml}
+
+    <div class="report-footer">
+      Sand-Körner GmbH · Online-Dispoplan · Kalenderwoche ${esc(weekKey)}
+    </div>
+  `;
+}
+
+
+/* --------------------------------------------------
+   PDF EXPORT
+-------------------------------------------------- */
+
+function exportPDF(){
+
+  $('exportArea').innerHTML = makeReportHtml();
+
+  window.print();
+}
+
+
+/* --------------------------------------------------
+   WORD EXPORT
+   Erzeugt eine in Microsoft Word bearbeitbare DOC-Datei.
+-------------------------------------------------- */
+
+function exportWord(){
+
+  const report = makeReportHtml();
+
+  const wordHtml = `
+    <!doctype html>
+    <html>
+    <head>
+      <meta charset="utf-8">
+      <title>Sand-Körner Dispoplan ${esc(weekKey)}</title>
+      <style>
+        body{
+          font-family:Arial,sans-serif;
+          color:#222;
+          font-size:10pt
+        }
+        h1,h2{color:#08055f}
+        h1{font-size:20pt}
+        h2{font-size:14pt;margin-top:22px}
+        table{
+          width:100%;
+          border-collapse:collapse;
+          margin-bottom:14px
+        }
+        th{
+          background:#08055f;
+          color:white;
+          border:1px solid #777;
+          padding:6px;
+          text-align:left
+        }
+        td{
+          border:1px solid #aaa;
+          padding:5px
+        }
+        .report-header{
+          border-bottom:3px solid #08055f;
+          padding-bottom:10px;
+          margin-bottom:15px
+        }
+        .report-header img{
+          width:75px;
+          height:65px;
+          object-fit:contain
+        }
+        .report-notes{
+          margin:12px 0;
+        }
+        .report-note{
+          border:1px solid #aaa;
+          padding:8px;
+          margin-bottom:8px;
+          white-space:pre-wrap
+        }
+        .report-day{
+          page-break-inside:avoid;
+          margin-top:20px
+        }
+        .report-footer{
+          margin-top:20px;
+          color:#666
+        }
+      </style>
+    </head>
+    <body>
+      ${report}
+    </body>
+    </html>
+  `;
+
+  const blob = new Blob(
+    ['\ufeff',wordHtml],
+    {type:'application/msword;charset=utf-8'}
+  );
+
+  const url = URL.createObjectURL(blob);
+  const link = document.createElement('a');
+
+  link.href = url;
+  link.download = `Sand-Koerner-Dispoplan-${weekKey}.doc`;
+
+  document.body.appendChild(link);
+  link.click();
+  link.remove();
+
+  URL.revokeObjectURL(url);
+}
+
+
+/* --------------------------------------------------
+   BEDIENUNG
+-------------------------------------------------- */
+
+$('tabs').addEventListener('click',e=>{
+
+  const b = e.target.closest('[data-tab]');
+  if(!b) return;
+
+  activeTab = b.dataset.tab;
+  render();
+});
+
 $('weekPicker').addEventListener('change',watchWeek);
-document.addEventListener('change',e=>{const el=e.target.closest('[data-path]');if(el)saveField(el)});
-$('printButton').addEventListener('click',()=>window.print());
+
+document.addEventListener('change',e=>{
+
+  const el = e.target.closest('[data-path]');
+
+  if(el) saveField(el);
+});
+
+$('saveButton').addEventListener('click',saveAll);
+
+$('printButton').addEventListener('click',exportPDF);
+$('pdfButton').addEventListener('click',exportPDF);
+
+$('wordButton').addEventListener('click',exportWord);
+$('wordButton2').addEventListener('click',exportWord);
+
+
+/* --------------------------------------------------
+   START
+-------------------------------------------------- */
+
 watchWeek();
+
 </script>
 </body>
 </html>
