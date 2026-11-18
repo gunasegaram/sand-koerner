@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="de">
 <head>
@@ -6,20 +7,170 @@
 <meta name="color-scheme" content="light">
 <title>Sand-Körner GmbH | Dispoplan</title>
 <style>
-:root{font-family:Arial,Helvetica,sans-serif;color:#111;background:#f1f2f6;--navy:#08055f;--navy2:#171275;--pale:#eff0f8;--ink:#111;--muted:#676779;--line:#c9cad5;--white:#fff}*{box-sizing:border-box}body{margin:0}button,input,textarea{font:inherit}button{cursor:pointer}.topbar{background:var(--navy);color:white;padding:12px clamp(14px,3vw,36px);display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}.brand{display:flex;align-items:center;gap:11px;font-weight:800;letter-spacing:.4px}.brand-mark{width:37px;height:37px;border:2px solid #fff;border-radius:50%;display:grid;place-items:center;font-size:18px}.brand small{display:block;font-size:9px;font-weight:500;letter-spacing:1.3px;color:#dadaf2;margin-top:3px}.toolbar{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.toolbar button,.toolbar input{background:#fff;color:var(--navy);border:1px solid #c9c9dc;border-radius:7px;padding:8px 11px;font-size:11px;font-weight:700}.toolbar .darkbtn{background:#ffffff16;color:#fff;border-color:#ffffff66}.app{max-width:1540px;margin:auto;padding:18px clamp(10px,2.4vw,30px) 38px}.controls{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:12px}.tabs{display:flex;gap:6px;overflow-x:auto}.tab{white-space:nowrap;background:#fff;border:1px solid #d9d9e2;border-radius:6px;padding:8px 12px;color:#4f5064;font-size:11px;font-weight:700}.tab.active{background:var(--navy);border-color:var(--navy);color:white}.week-control{display:flex;align-items:center;gap:8px;color:var(--navy);font-size:11px;font-weight:700;background:white;border:1px solid #d9d9e2;padding:6px 9px;border-radius:6px}.week-control input{border:0;color:var(--navy);font-weight:700;font-size:12px;outline:0}.status{font-size:11px;margin:0 0 10px;padding:8px 11px;background:#fff;border:1px solid #e1e1e9;border-radius:5px;color:#55566a}.status.error{background:#fff1f0;color:#992e29}.status.good{background:#eff7f0;color:#326341}.privacy{font-size:10px;line-height:1.45;color:#6c5260;background:#fff8fa;border:1px solid #ead5dc;padding:8px 11px;margin:0 0 12px;border-radius:5px}.sheet{background:#fff;border:1px solid #d6d7df;min-height:770px;padding:30px clamp(20px,3.3vw,54px) 23px;box-shadow:0 5px 22px #14163b0c;display:flex;flex-direction:column}.sheet-top{display:grid;grid-template-columns:1.1fr 1.15fr .8fr;align-items:center;gap:18px;margin-bottom:20px;font-size:17px}.doc-label{font-size:18px;font-weight:700;text-decoration:underline}.doc-meta{display:flex;align-items:baseline;gap:7px;min-width:0}.doc-meta b{font-weight:700;text-decoration:underline}.doc-meta input{border:0;border-bottom:1px solid #777;background:transparent;min-width:50px;flex:1;padding:2px 3px;font-size:16px;outline:0}.date-head{display:grid;grid-template-columns:1.3fr 1fr 1.35fr .75fr;gap:12px;align-items:end;margin-bottom:10px}.date-row{display:flex;align-items:center;gap:8px}.date-row strong{font-size:17px;text-decoration:underline}.date-row input{font-size:15px;font-weight:700;border:0;border-bottom:1px solid #777;padding:2px 0;min-width:145px;max-width:190px}.column-title{font-size:16px;font-weight:700}.dispatch-table{width:100%;border-collapse:collapse;table-layout:fixed;margin-bottom:10px}.dispatch-table col:nth-child(1){width:25%}.dispatch-table col:nth-child(2){width:17%}.dispatch-table col:nth-child(3){width:38%}.dispatch-table col:nth-child(4){width:20%}.dispatch-table thead th{text-align:left;font-size:0;padding:0 5px 4px}.dispatch-table thead th:first-child{font-size:0}.dispatch-table thead th:nth-child(2),.dispatch-table thead th:nth-child(3),.dispatch-table thead th:nth-child(4){font-size:16px}.dispatch-table td{padding:5px 4px;height:41px;vertical-align:middle}.dispatch-table input{position:relative;z-index:1;pointer-events:auto;cursor:text;width:100%;min-height:30px;border:0;border-bottom:1px solid #c9cad5;border-radius:0;padding:4px 2px;font-size:14px;background:transparent;outline:none}.dispatch-table input:hover,.dispatch-table input:focus{border-bottom-color:#9a9aab;background:#fbfbff}.dispatch-table .veh-type{font-size:13px}.bottom-heading{display:grid;grid-template-columns:1fr 1.1fr;gap:28px;margin-top:7px}.bottom-heading h3{margin:0 0 5px;font-size:18px;text-decoration:underline}.bottom-heading h3:nth-child(2){padding-left:86px}.bottom-content{display:grid;grid-template-columns:1fr 1.1fr;gap:0;flex:1;min-height:210px}.site-area{padding:4px 18px 5px 0;border-right:1px solid #333;display:flex;flex-direction:column}.site-lines{position:relative;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);grid-template-rows:repeat(7,27px);column-gap:20px;row-gap:0;width:100%;margin-top:2px}.site-lines::before{content:"";position:absolute;top:0;bottom:0;left:50%;border-left:1px solid #bfc0c8;pointer-events:none;z-index:0}.site-line{position:relative;z-index:1;pointer-events:auto;display:block;width:100%;height:27px;min-height:27px;border:0;border-bottom:1px solid #bfc0c8;border-radius:0;background:transparent;padding:2px 4px;font-size:13px;line-height:21px;outline:none;cursor:text}.site-line:focus{border-bottom:2px solid #777;background:#fbfbff}.site-line:nth-child(1){grid-column:1;grid-row:1}.site-line:nth-child(2){grid-column:1;grid-row:2}.site-line:nth-child(3){grid-column:1;grid-row:3}.site-line:nth-child(4){grid-column:1;grid-row:4}.site-line:nth-child(5){grid-column:1;grid-row:5}.site-line:nth-child(6){grid-column:1;grid-row:6}.site-line:nth-child(7){grid-column:1;grid-row:7}.site-line:nth-child(8){grid-column:2;grid-row:1}.site-line:nth-child(9){grid-column:2;grid-row:2}.site-line:nth-child(10){grid-column:2;grid-row:3}.site-line:nth-child(11){grid-column:2;grid-row:4}.site-line:nth-child(12){grid-column:2;grid-row:5}.site-line:nth-child(13){grid-column:2;grid-row:6}.site-line:nth-child(14){grid-column:2;grid-row:7}.sub-area{padding:0 0 4px 86px;display:flex;flex-direction:column;justify-content:flex-end;gap:0}.sub-row{display:flex;align-items:center;gap:0;min-width:0;height:27px}.sub-name{flex:0 0 auto;font-size:13px;padding:0;white-space:nowrap}.sub-row input{flex:1 1 auto;border:0;border-bottom:1px solid #bfc0c8;min-width:0;width:auto;height:27px;margin:0;padding:2px 4px;font-size:13px;outline:none}.meta-below{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:5px}.meta-below label{display:flex;align-items:center;gap:8px;font-size:16px}.meta-below input{border:0;border-bottom:1px solid #888;flex:1;min-width:30px;font-size:14px;padding:2px 3px;outline:none}.need-row{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-top:14px;padding-top:9px;border-top:1px solid #d8d8de;font-size:12px}.need-row strong{font-size:14px;text-decoration:underline}.need-item{display:flex;align-items:center;gap:4px;white-space:nowrap}.need-item input{width:72px;border:0;border-bottom:1px solid #777;padding:3px;background:transparent;text-align:center;font-size:12px;outline:none}.plan-b{margin-left:auto;display:flex;align-items:center;gap:6px;font-size:16px;font-weight:700;text-decoration:underline}.plan-b input{width:140px;border:0;border-bottom:1px solid #777;font-size:12px;text-decoration:none;padding:3px;outline:none}.week-sheet{background:white;border:1px solid #d6d7df;padding:28px clamp(20px,3.3vw,54px);box-shadow:0 5px 22px #14163b0c}.week-sheet h2{margin:0 0 16px;font-size:24px;color:var(--navy);text-decoration:underline}.week-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:12px 0 22px}.week-field{border:1px solid #cdd1dc;background:#f4f5f9;padding:8px;font-size:11px}.week-field strong{display:block;color:var(--navy);margin-bottom:4px}.week-field input{border:0;border-bottom:1px solid #999;background:transparent;width:100%;padding:3px;font-size:12px;outline:none}.week-sheet h3{font-size:15px;color:var(--navy);margin:16px 0 7px}.week-table{width:100%;border-collapse:collapse;table-layout:fixed;margin-bottom:14px}.week-table th{background:var(--navy);color:white;text-align:left;padding:7px;font-size:10px}.week-table td{border:1px solid #cdd1dc;padding:3px}.week-table input{width:100%;border:0;padding:7px 5px;font-size:11px;outline:none}.save-dot{width:7px;height:7px;display:inline-block;border-radius:50%;background:#aaa;margin-right:5px}.save-dot.good{background:#35a169}.save-dot.busy{background:#d9a334}.hidden{display:none!important}.footer{font-size:9px;color:#6f7080;margin:10px 1px 0}.report-export,.print-area{display:none}
-@media(max-width:850px){.sheet{padding:22px 18px;min-height:700px}.sheet-top{font-size:14px;gap:9px}.doc-meta input{font-size:13px}.date-head{grid-template-columns:1.2fr .8fr 1fr .6fr;gap:6px}.column-title,.dispatch-table thead th:nth-child(2),.dispatch-table thead th:nth-child(3),.dispatch-table thead th:nth-child(4){font-size:13px}.dispatch-table td{height:37px}.dispatch-table input{font-size:12px}.dispatch-table .veh-type{font-size:11px}.bottom-content{min-height:180px}.sub-area{padding-left:70px}.need-row{gap:9px}.week-grid{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:580px){.app{padding:12px 7px 24px}.sheet{padding:17px 12px;min-height:0}.sheet-top{grid-template-columns:1fr 1fr;row-gap:10px;margin-bottom:13px}.date-head{grid-template-columns:1fr 1fr;row-gap:9px}.date-row input{min-width:120px}.dispatch-table{min-width:690px}.sheet .table-scroll{overflow-x:auto}.bottom-heading{gap:12px}.bottom-heading h3{font-size:15px}.bottom-content{min-height:195px}.site-area{padding-right:10px}.sub-area{padding-left:20px;grid-template-columns:.9fr 1fr;column-gap:5px}.bottom-heading h3:nth-child(2){padding-left:20px}.sub-row{gap:0}.sub-name,.sub-area input{font-size:10px}.need-row{align-items:flex-start}.need-row strong{width:100%}.plan-b{margin-left:0}.week-grid{grid-template-columns:1fr 1fr}}
-@media print{@page{size:A4 landscape;margin:8mm}html,body{width:100%;min-height:0;margin:0!important;padding:0!important;background:#fff!important;print-color-adjust:exact;-webkit-print-color-adjust:exact}.topbar,.controls,.status,.privacy,.footer,#dayView,#weekView,#reportExport{display:none!important}.app{width:100%;max-width:none;margin:0;padding:0}#printArea{display:none!important}.printing-day #printArea,.printing-all #printArea{display:block!important;width:100%;height:auto;overflow:visible}.printing-all #printArea .sheet{break-after:page;page-break-after:always}.printing-all #printArea .sheet:last-child{break-after:auto;page-break-after:auto}.sheet{display:flex!important;width:100%;height:190mm;min-height:190mm;padding:8mm 3.3vw 6mm;margin:0;border:0;box-shadow:none;overflow:hidden;transform:scale(.88);transform-origin:top left;background:#fff}.sheet-top{margin-bottom:20px}.dispatch-table td{height:41px}.site-area textarea{resize:none}.sheet input,.sheet textarea{color:#111!important}.sheet input[type=date]::-webkit-calendar-picker-indicator{display:none!important}.printing-week #weekView{display:block!important;width:100%;height:190mm;max-height:190mm;overflow:hidden;position:relative;break-before:avoid;break-after:avoid;break-inside:avoid;page-break-before:avoid;page-break-after:avoid;page-break-inside:avoid;zoom:1}.printing-week .week-sheet{width:100%;height:190mm;max-height:190mm;min-height:0;padding:0;border:0;box-shadow:none;overflow:hidden;zoom:1;transform:none;break-inside:avoid;page-break-inside:avoid}.printing-week .week-sheet h2{font-size:20pt;margin:0 0 4mm}.printing-week .week-grid{gap:2mm;margin:2mm 0 5mm}.printing-week .week-field{padding:5px;font-size:10pt}.printing-week .week-field strong{margin-bottom:2px}.printing-week .week-field input{padding:2px;font-size:10pt}.printing-week .week-sheet h3{font-size:13pt;margin:4mm 0 2mm}.printing-week .week-table{margin:0 0 4mm;break-inside:avoid;page-break-inside:avoid}.printing-week .week-table th{padding:5px 7px;font-size:9pt}.printing-week .week-table td{padding:0 3px;height:8mm}.printing-week .week-table input{padding:2px 5px;font-size:9pt}.printing-week .week-table tr{break-inside:avoid;page-break-inside:avoid}}
-/* Subunternehmer: sieben beschriftete Zeilen mit Mittellinie und 14 Schreibfeldern */
-.sheet .bottom-heading h3:nth-child(2){padding-left:150px!important}
-.sheet .bottom-content .sub-area{--sub-label-width:68px;position:relative!important;display:flex!important;flex-direction:column!important;justify-content:flex-end!important;align-content:stretch!important;gap:0!important;width:auto!important;margin-left:150px!important;padding:0 0 4px 0!important}
-.sheet .bottom-content .sub-area::before{content:"";position:absolute;top:0;bottom:4px;left:calc((100% + var(--sub-label-width))/2);border-left:1px solid #bfc0c8;pointer-events:none;z-index:2}
-.sheet .bottom-content .sub-row{display:grid!important;grid-template-columns:var(--sub-label-width) minmax(0,1fr) minmax(0,1fr)!important;column-gap:0!important;align-items:center!important;width:100%!important;height:27px!important;min-width:0!important}
-.sheet .bottom-content .sub-row .sub-name{display:block!important;grid-column:1!important;flex:none!important;width:var(--sub-label-width)!important;min-width:var(--sub-label-width)!important;max-width:var(--sub-label-width)!important;margin:0!important;padding:0!important;white-space:nowrap!important}
-.sheet .bottom-content .sub-row input{display:block!important;grid-column:auto!important;flex:none!important;width:100%!important;min-width:0!important;margin:0!important;padding:2px 4px!important;height:27px!important}
-.sheet .bottom-content .sub-row input:last-child{border-left:0!important}
-@media(max-width:850px){.sheet .bottom-heading h3:nth-child(2){padding-left:90px!important}.sheet .bottom-content .sub-area{margin-left:90px!important}}
-@media(max-width:580px){.sheet .bottom-heading h3:nth-child(2){padding-left:20px!important}.sheet .bottom-content .sub-area{--sub-label-width:52px;margin-left:20px!important}.sheet .bottom-content .sub-row{grid-template-columns:var(--sub-label-width) minmax(0,1fr) minmax(0,1fr)!important;width:100%!important;min-width:0!important;max-width:none!important}.sheet .bottom-content .sub-row .sub-name{width:var(--sub-label-width)!important;min-width:var(--sub-label-width)!important;max-width:var(--sub-label-width)!important}.sheet .bottom-content .sub-row .sub-name,.sheet .bottom-content .sub-row input{font-size:10px!important}}
+:root{font-family:Arial,Helvetica,sans-serif;color:#111;background:#f1f2f6;--navy:#08055f;--navy2:#171275;--pale:#eff0f8;--ink:#111;--muted:#676779;--line:#c9cad5;--white:#fff}
+*{box-sizing:border-box}
+body{margin:0}
+button,input,textarea{font:inherit}
+button{cursor:pointer}
+.topbar{background:var(--navy);color:white;padding:12px clamp(14px,3vw,36px);display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:11px;font-weight:800;letter-spacing:.4px}
+.brand-mark{width:37px;height:37px;border:2px solid #fff;border-radius:50%;display:grid;place-items:center;font-size:18px}
+.brand small{display:block;font-size:9px;font-weight:500;letter-spacing:1.3px;color:#dadaf2;margin-top:3px}
+.toolbar{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.toolbar button,.toolbar input{background:#fff;color:var(--navy);border:1px solid #c9c9dc;border-radius:7px;padding:8px 11px;font-size:11px;font-weight:700}
+.toolbar .darkbtn{background:#ffffff16;color:#fff;border-color:#ffffff66}
+.app{max-width:1540px;margin:auto;padding:18px clamp(10px,2.4vw,30px) 38px}
+.controls{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:12px}
+.tabs{display:flex;gap:6px;overflow-x:auto}
+.tab{white-space:nowrap;background:#fff;border:1px solid #d9d9e2;border-radius:6px;padding:8px 12px;color:#4f5064;font-size:11px;font-weight:700}
+.tab.active{background:var(--navy);border-color:var(--navy);color:white}
+.week-control{display:flex;align-items:center;gap:8px;color:var(--navy);font-size:11px;font-weight:700;background:white;border:1px solid #d9d9e2;padding:6px 9px;border-radius:6px}
+.week-control input{border:0;color:var(--navy);font-weight:700;font-size:12px;outline:0}
+.status{font-size:11px;margin:0 0 10px;padding:8px 11px;background:#fff;border:1px solid #e1e1e9;border-radius:5px;color:#55566a}
+.status.error{background:#fff1f0;color:#992e29}
+.status.good{background:#eff7f0;color:#326341}
+.privacy{font-size:10px;line-height:1.45;color:#6c5260;background:#fff8fa;border:1px solid #ead5dc;padding:8px 11px;margin:0 0 12px;border-radius:5px}
+.sheet{background:#fff;border:1px solid #d6d7df;min-height:770px;padding:30px clamp(20px,3.3vw,54px) 23px;box-shadow:0 5px 22px #14163b0c;display:flex;flex-direction:column}
+.sheet-top{display:grid;grid-template-columns:1.1fr 1.15fr .8fr;align-items:center;gap:18px;margin-bottom:20px;font-size:17px}
+.doc-label{font-size:18px;font-weight:700;text-decoration:underline}
+.doc-meta{display:flex;align-items:baseline;gap:7px;min-width:0}
+.doc-meta b{font-weight:700;text-decoration:underline}
+.doc-meta input{border:0;border-bottom:1px solid #777;background:transparent;min-width:50px;flex:1;padding:2px 3px;font-size:16px;outline:0}
+.date-head{display:grid;grid-template-columns:1.3fr 1fr 1.35fr .75fr;gap:12px;align-items:end;margin-bottom:10px}
+.date-row{display:flex;align-items:center;gap:8px}
+.date-row strong{font-size:17px;text-decoration:underline}
+.date-row input{font-size:15px;font-weight:700;border:0;border-bottom:1px solid #777;padding:2px 0;min-width:145px;max-width:190px}
+.column-title{font-size:16px;font-weight:700}
+.dispatch-table{width:100%;border-collapse:collapse;table-layout:fixed;margin-bottom:10px}
+.dispatch-table col:nth-child(1){width:25%}
+.dispatch-table col:nth-child(2){width:17%}
+.dispatch-table col:nth-child(3){width:38%}
+.dispatch-table col:nth-child(4){width:20%}
+.dispatch-table thead th{text-align:left;font-size:0;padding:0 5px 4px}
+.dispatch-table thead th:first-child{font-size:0}
+.dispatch-table thead th:nth-child(2),.dispatch-table thead th:nth-child(3),.dispatch-table thead th:nth-child(4){font-size:16px}
+.dispatch-table td{padding:5px 4px;height:41px;vertical-align:middle}
+.dispatch-table input{position:relative;z-index:1;pointer-events:auto;cursor:text;width:100%;min-height:30px;border:0;border-bottom:1px solid #c9cad5;border-radius:0;padding:4px 2px;font-size:14px;background:transparent;outline:none}
+.dispatch-table input:hover,.dispatch-table input:focus{border-bottom-color:#9a9aab;background:#fbfbff}
+.dispatch-table .veh-type{font-size:13px}
+.bottom-heading{display:grid;grid-template-columns:1fr 1.1fr;gap:28px;margin-top:7px}
+.bottom-heading h3{margin:0 0 5px;font-size:18px;text-decoration:underline}
+
+/* Nur die Überschrift Subunternehmer wird verschoben */
+.bottom-heading .subunternehmer-heading{
+  position:relative;
+  left:550px;
+}
+
+.bottom-content{display:grid;grid-template-columns:1fr 1.1fr;gap:0;flex:1;min-height:210px}
+.site-area{padding:4px 18px 5px 0;border-right:1px solid #333;display:flex;flex-direction:column}
+.site-lines{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:repeat(6,27px);column-gap:14px;row-gap:0;width:100%;margin-top:2px}
+.site-line{position:relative;z-index:1;pointer-events:auto;display:block;width:100%;height:27px;min-height:27px;border:0;border-bottom:1px solid #bfc0c8;border-radius:0;background:transparent;padding:2px 4px;font-size:13px;line-height:21px;outline:none;cursor:text}
+.site-line:focus{border-bottom:2px solid #777;background:#fbfbff}
+.site-line:nth-child(1){grid-column:1;grid-row:1}
+.site-line:nth-child(2){grid-column:1;grid-row:2}
+.site-line:nth-child(3){grid-column:1;grid-row:3}
+.site-line:nth-child(4){grid-column:1;grid-row:4}
+.site-line:nth-child(5){grid-column:1;grid-row:5}
+.site-line:nth-child(6){grid-column:1;grid-row:6}
+.site-line:nth-child(7){grid-column:2;grid-row:1}
+.site-line:nth-child(8){grid-column:2;grid-row:2}
+.site-line:nth-child(9){grid-column:2;grid-row:3}
+.site-line:nth-child(10){grid-column:2;grid-row:4}
+.site-line:nth-child(11){grid-column:2;grid-row:5}
+.site-line:nth-child(12){grid-column:2;grid-row:6}
+.sub-area{padding:0 0 4px 38px;display:grid;grid-template-columns:minmax(76px,.55fr) minmax(160px,1.45fr);column-gap:20px;align-content:end}
+.sub-name{font-size:13px;padding:4px 0;white-space:nowrap}
+.sub-area input{border:0;border-bottom:1px solid #bfc0c8;min-width:0;width:100%;height:27px;padding:2px 4px;font-size:13px;outline:none}
+.meta-below{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:5px}
+.meta-below label{display:flex;align-items:center;gap:8px;font-size:16px}
+.meta-below input{border:0;border-bottom:1px solid #888;flex:1;min-width:30px;font-size:14px;padding:2px 3px;outline:none}
+.need-row{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-top:14px;padding-top:9px;border-top:1px solid #d8d8de;font-size:12px}
+.need-row strong{font-size:14px;text-decoration:underline}
+.need-item{display:flex;align-items:center;gap:4px;white-space:nowrap}
+.need-item input{width:72px;border:0;border-bottom:1px solid #777;padding:3px;background:transparent;text-align:center;font-size:12px;outline:none}
+.plan-b{margin-left:auto;display:flex;align-items:center;gap:6px;font-size:16px;font-weight:700;text-decoration:underline}
+.plan-b input{width:140px;border:0;border-bottom:1px solid #777;font-size:12px;text-decoration:none;padding:3px;outline:none}
+.week-sheet{background:white;border:1px solid #d6d7df;padding:28px clamp(20px,3.3vw,54px);box-shadow:0 5px 22px #14163b0c}
+.week-sheet h2{margin:0 0 16px;font-size:24px;color:var(--navy);text-decoration:underline}
+.week-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:12px 0 22px}
+.week-field{border:1px solid #cdd1dc;background:#f4f5f9;padding:8px;font-size:11px}
+.week-field strong{display:block;color:var(--navy);margin-bottom:4px}
+.week-field input{border:0;border-bottom:1px solid #999;background:transparent;width:100%;padding:3px;font-size:12px;outline:none}
+.week-sheet h3{font-size:15px;color:var(--navy);margin:16px 0 7px}
+.week-table{width:100%;border-collapse:collapse;table-layout:fixed;margin-bottom:14px}
+.week-table th{background:var(--navy);color:white;text-align:left;padding:7px;font-size:10px}
+.week-table td{border:1px solid #cdd1dc;padding:3px}
+.week-table input{width:100%;border:0;padding:7px 5px;font-size:11px;outline:none}
+.save-dot{width:7px;height:7px;display:inline-block;border-radius:50%;background:#aaa;margin-right:5px}
+.save-dot.good{background:#35a169}
+.save-dot.busy{background:#d9a334}
+.hidden{display:none!important}
+.footer{font-size:9px;color:#6f7080;margin:10px 1px 0}
+.report-export,.print-area{display:none}
+
+@media(max-width:850px){
+.sheet{padding:22px 18px;min-height:700px}
+.sheet-top{font-size:14px;gap:9px}
+.doc-meta input{font-size:13px}
+.date-head{grid-template-columns:1.2fr .8fr 1fr .6fr;gap:6px}
+.column-title,.dispatch-table thead th:nth-child(2),.dispatch-table thead th:nth-child(3),.dispatch-table thead th:nth-child(4){font-size:13px}
+.dispatch-table td{height:37px}
+.dispatch-table input{font-size:12px}
+.dispatch-table .veh-type{font-size:11px}
+.bottom-content{min-height:180px}
+.sub-area{padding-left:16px}
+.need-row{gap:9px}
+.week-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:580px){
+.app{padding:12px 7px 24px}
+.sheet{padding:17px 12px;min-height:0}
+.sheet-top{grid-template-columns:1fr 1fr;row-gap:10px;margin-bottom:13px}
+.date-head{grid-template-columns:1fr 1fr;row-gap:9px}
+.date-row input{min-width:120px}
+.dispatch-table{min-width:690px}
+.sheet .table-scroll{overflow-x:auto}
+.bottom-heading{gap:12px}
+.bottom-heading h3{font-size:15px}
+.bottom-content{min-height:195px}
+.site-area{padding-right:10px}
+.sub-area{padding-left:10px;grid-template-columns:.9fr 1fr;column-gap:5px}
+.sub-name,.sub-area input{font-size:10px}
+.need-row{align-items:flex-start}
+.need-row strong{width:100%}
+.plan-b{margin-left:0}
+.week-grid{grid-template-columns:1fr 1fr}
+}
+@media print{
+@page{size:A4 landscape;margin:8mm}
+html,body{width:100%;min-height:0;margin:0!important;padding:0!important;background:#fff!important;print-color-adjust:exact;-webkit-print-color-adjust:exact}
+.topbar,.controls,.status,.privacy,.footer,#dayView,#weekView,#reportExport{display:none!important}
+.app{width:100%;max-width:none;margin:0;padding:0}
+#printArea{display:none!important}
+.printing-day #printArea,.printing-all #printArea{display:block!important;width:100%;height:auto;overflow:visible}
+.printing-all #printArea .sheet{break-after:page;page-break-after:always}
+.printing-all #printArea .sheet:last-child{break-after:auto;page-break-after:auto}
+.sheet{display:flex!important;width:100%;height:190mm;min-height:190mm;padding:8mm 3.3vw 6mm;margin:0;border:0;box-shadow:none;overflow:hidden;transform:scale(.88);transform-origin:top left;background:#fff}
+.sheet-top{margin-bottom:20px}
+.dispatch-table td{height:41px}
+.site-area textarea{resize:none}
+.sheet input,.sheet textarea{color:#111!important}
+.sheet input[type=date]::-webkit-calendar-picker-indicator{display:none!important}
+.printing-week #weekView{display:block!important;width:100%;height:190mm;max-height:190mm;overflow:hidden;position:relative;break-before:avoid;break-after:avoid;break-inside:avoid;page-break-before:avoid;page-break-after:avoid;page-break-inside:avoid;zoom:1}
+.printing-week .week-sheet{width:100%;height:190mm;max-height:190mm;min-height:0;padding:0;border:0;box-shadow:none;overflow:hidden;zoom:1;transform:none;break-inside:avoid;page-break-inside:avoid}
+.printing-week .week-sheet h2{font-size:20pt;margin:0 0 4mm}
+.printing-week .week-grid{gap:2mm;margin:2mm 0 5mm}
+.printing-week .week-field{padding:5px;font-size:10pt}
+.printing-week .week-field strong{margin-bottom:2px}
+.printing-week .week-field input{padding:2px;font-size:10pt}
+.printing-week .week-sheet h3{font-size:13pt;margin:4mm 0 2mm}
+.printing-week .week-table{margin:0 0 4mm;break-inside:avoid;page-break-inside:avoid}
+.printing-week .week-table th{padding:5px 7px;font-size:9pt}
+.printing-week .week-table td{padding:0 3px;height:8mm}
+.printing-week .week-table input{padding:2px 5px;font-size:9pt}
+.printing-week .week-table tr{break-inside:avoid;page-break-inside:avoid}
+}
 </style>
 </head>
 <body>
@@ -40,36 +191,190 @@
 <script type="module">
 import {initializeApp} from 'https://www.gstatic.com/firebasejs/12.19.0/firebase-app.js';
 import {getDatabase,ref,onValue,update,set} from 'https://www.gstatic.com/firebasejs/12.19.0/firebase-database.js';
+
 const firebaseConfig={apiKey:'AIzaSyCQaFurCagEayr39WFiCmO1UXRQ61CiLVk',authDomain:'sand-k.firebaseapp.com',databaseURL:'https://sand-k-default-rtdb.firebaseio.com',projectId:'sand-k',storageBucket:'sand-k.firebasestorage.app',messagingSenderId:'410773825979',appId:'1:749978080433:web:f221e4a8719c247dd1bc9e',measurementId:'G-L30N814CZE'};
 const db=getDatabase(initializeApp(firebaseConfig));
 const days=[{id:'mo',name:'Montag',short:'Mo.',offset:0},{id:'di',name:'Dienstag',short:'Di.',offset:1},{id:'mi',name:'Mittwoch',short:'Mi.',offset:2},{id:'do',name:'Donnerstag',short:'Do.',offset:3},{id:'fr',name:'Freitag',short:'Fr.',offset:4}];
 const vehicleDefaults=['3-Achser Abroller-Kran-LKW','3-Achs-Absetzkipper','3-Achs-3-Seitenkipper / Tandemzug','3-Achs-3-Seitenkipper / Tandemzug','4-Achs-3-Seitenkipper','2-Achs-Hydrosattel','2-Achs-Hydrosattel','2-Achs-Hydrosattel','2-Achs-Sattel'];
 const subcontractorDefaults=['Geiger','EZF','Jurasoil','Zech','Hofmann','Trollius','MDU'];
-const $=id=>document.getElementById(id);let activeTab=new URLSearchParams(location.search).get('day')||'mo',weekKey='',weekData={},stopWeekListener=null,saveQueue=Promise.resolve(),ignoreRemoteUntil=0,autoPrintStarted=false;
-const pageParams=new URLSearchParams(location.search);if(!['mo','di','mi','do','fr','week'].includes(activeTab))activeTab='mo';
-const weekPicker=$('weekPicker');const requestedWeek=pageParams.get('week');weekPicker.value=requestedWeek&&/^\d{4}-W\d{2}$/.test(requestedWeek)?requestedWeek:toIsoWeek(new Date());
-function toIsoWeek(date){const d=new Date(Date.UTC(date.getFullYear(),date.getMonth(),date.getDate()));d.setUTCDate(d.getUTCDate()+4-(d.getUTCDay()||7));const y=d.getUTCFullYear(),start=new Date(Date.UTC(y,0,1)),w=Math.ceil((((d-start)/86400000)+1)/7);return `${y}-W${String(w).padStart(2,'0')}`}
-function monday(value){const [y,w]=value.split('-W').map(Number),jan4=new Date(Date.UTC(y,0,4)),d=new Date(jan4);d.setUTCDate(jan4.getUTCDate()-((jan4.getUTCDay()+6)%7)+(w-1)*7);return d}
-function isoDate(offset){const d=monday(weekKey);d.setUTCDate(d.getUTCDate()+offset);return `${d.getUTCFullYear()}-${String(d.getUTCMonth()+1).padStart(2,'0')}-${String(d.getUTCDate()).padStart(2,'0')}`}
-function prettyDate(offset){const d=monday(weekKey);d.setUTCDate(d.getUTCDate()+offset);return new Intl.DateTimeFormat('de-DE',{day:'2-digit',month:'2-digit',year:'numeric',timeZone:'UTC'}).format(d)}
-function esc(v){return String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
-function val(path,fallback=''){let v=weekData;for(const part of path.split('/'))v=v&&typeof v==='object'?v[part]:undefined;return v===undefined||v===null?fallback:v}
-function status(text,kind=''){const box=$('status');box.className='status'+(kind?' '+kind:'');box.querySelector('.save-dot').className='save-dot'+(kind?' '+kind:'');$('statusText').textContent=text}
-function field(path,label,placeholder='',fallback='',type='text'){return `<label class="doc-meta"><b>${esc(label)}</b><input type="${type}" data-path="${esc(path)}" value="${esc(val(path,fallback))}" placeholder="${esc(placeholder)}"></label>`}
-function tabs(){ $('tabs').innerHTML=days.map(d=>`<button type="button" class="tab ${activeTab===d.id?'active':''}" data-tab="${d.id}">${d.name}</button>`).join('')+`<button type="button" class="tab ${activeTab==='week'?'active':''}" data-tab="week">Kundenliste / Woche</button><a class="tab" href="dispoplan-suche.html?week=${encodeURIComponent(weekPicker.value)}&day=${encodeURIComponent(activeTab)}">Gespeicherte Daten suchen</a>` }
-function dayHtml(d){const base=`days/${d.id}`;const oldNotes=String(val(`${base}/siteNotes`,'' )).split(/\r?\n/);const siteLines=Array.from({length:14},(_,i)=>{const path=`${base}/siteNotesLines/l${String(i+1).padStart(2,'0')}`;return `<input class="site-line" type="text" data-path="${path}" value="${esc(val(path,oldNotes[i]||''))}" aria-label="Baustellen Zeile ${i+1}">`}).join('');const rows=vehicleDefaults.map((typ,i)=>{const row=`${base}/vehicles/v${String(i+1).padStart(2,'0')}`;return `<tr><td><input class="veh-type" data-path="${row}/type" value="${esc(val(`${row}/type`,typ))}" aria-label="Fahrzeugtyp"></td><td><input data-path="${row}/vehicle" value="${esc(val(`${row}/vehicle`))}" aria-label="Fahrzeug"></td><td><input data-path="${row}/customer" value="${esc(val(`${row}/customer`))}" aria-label="Kunde"></td><td><input data-path="${row}/price" value="${esc(val(`${row}/price`))}" aria-label="Preis"></td></tr>`}).join('');const subs=subcontractorDefaults.map((name,i)=>{const first=`${base}/subcontractors/s${String(i+1).padStart(2,'0')}`,second=`${base}/subcontractors/s${String(i+8).padStart(2,'0')}`;return `<div class="sub-row"><span class="sub-name">${name}:</span><input data-path="${first}" value="${esc(val(first))}" aria-label="${name} Eintrag 1"><input data-path="${second}" value="${esc(val(second))}" aria-label="${name} Eintrag 2"></div>`}).join('');return `<article class="sheet" data-day="${d.id}"><div class="sheet-top"><strong class="doc-label">Dispoplan:</strong><label class="doc-meta"><b>Grube:</b><input data-path="${base}/grube" value="${esc(val(`${base}/grube`))}" aria-label="Grube"></label><label class="doc-meta"><b>MiZE:</b><input data-path="${base}/mize" value="${esc(val(`${base}/mize`))}" aria-label="MiZE"></label></div><div class="date-head"><label class="date-row"><strong>${d.short}</strong><input type="date" data-path="${base}/date" value="${esc(val(`${base}/date`,isoDate(d.offset)))}" aria-label="Datum"></label><span class="column-title">Fahrzeug:</span><span class="column-title">Kunde:</span><span class="column-title">Preise:</span></div><div class="table-scroll"><table class="dispatch-table"><colgroup><col><col><col><col></colgroup><thead><tr><th>Fahrzeugtyp</th><th></th><th></th><th></th></tr></thead><tbody>${rows}</tbody></table></div><div class="bottom-heading"><h3>Baustellen:</h3><h3>Subunternehmer:</h3></div><div class="bottom-content"><div class="site-area"><div class="site-lines">${siteLines}</div></div><div class="sub-area">${subs}</div></div><div class="meta-below"><label>Grube:<input data-path="${base}/grubeNotes" value="${esc(val(`${base}/grubeNotes`))}" aria-label="Grube Details"></label><label>MiZE:<input data-path="${base}/mizeNotes" value="${esc(val(`${base}/mizeNotes`))}" aria-label="MiZE Details"></label></div><div class="need-row"><strong>Fahrzeugbedarf:</strong>${[['threeAxle','3-Achskipper'],['fourAxle','4-Achskipper'],['sattel','Sattel'],['gliederzug','Gliederzug']].map(([k,l])=>`<label class="need-item">${l}:<input data-path="${base}/bedarf/${k}" value="${esc(val(`${base}/bedarf/${k}`))}" aria-label="${l}"></label>`).join('')}<label class="plan-b">PLAN-B:<input data-path="${base}/planB" value="${esc(val(`${base}/planB`))}" aria-label="Plan B"></label></div></article>`}
-function renderWeek(){const wk=val('week/kw',weekKey),meta=`<div class="week-grid">${[['kw','Kalenderwoche',wk],['period','Zeitraum','von __________ bis __________'],['planner','Disposition',''],['grubeMize','Grube / MiZE',''],['bedarf/threeAxle','3-Achskipper',''],['bedarf/fourAxle','4-Achskipper',''],['bedarf/sattel','Sattel',''],['bedarf/gliederzug','Gliederzug','']].map(([path,label,fallback])=>`<label class="week-field"><strong>${label}</strong><input data-path="week/${path}" value="${esc(val(`week/${path}`,fallback))}"></label>`).join('')}</div>`;const customerRows=Array.from({length:9},(_,i)=>{const row=`week/customers/r${String(i+1).padStart(2,'0')}`;return `<tr>${['Kunde','Ansprechpartner','Telefon','Termin / Notiz'].map((h,j)=>`<td><input data-path="${row}/c${j+1}" value="${esc(val(`${row}/c${j+1}`))}" aria-label="${h}"></td>`).join('')}</tr>`}).join('');const subRows=Array.from({length:6},(_,i)=>{const row=`week/subcontractors/r${String(i+1).padStart(2,'0')}`;return `<tr>${['Firma','Ansprechpartner','Telefon','Einsatz / Notiz'].map((h,j)=>`<td><input data-path="${row}/c${j+1}" value="${esc(val(`${row}/c${j+1}`))}" aria-label="${h}"></td>`).join('')}</tr>`}).join('');$('weekView').innerHTML=`<section class="week-sheet"><h2>KW ${esc(wk)}</h2>${meta}<h3>Subunternehmer / Plan-B</h3><table class="week-table"><thead><tr><th>Firma</th><th>Ansprechpartner</th><th>Telefon</th><th>Einsatz / Notiz</th></tr></thead><tbody>${subRows}</tbody></table><h3>Kundenliste:</h3><table class="week-table"><thead><tr><th>Kunde</th><th>Ansprechpartner</th><th>Telefon</th><th>Termin / Notiz</th></tr></thead><tbody>${customerRows}</tbody></table></section>`}
-function render(){tabs();if(activeTab==='week'){$('dayView').classList.add('hidden');$('weekView').classList.remove('hidden');renderWeek()}else{$('weekView').classList.add('hidden');$('dayView').classList.remove('hidden');$('dayView').innerHTML=dayHtml(days.find(x=>x.id===activeTab))}}
-function listenWeek(){if(stopWeekListener){stopWeekListener();stopWeekListener=null}weekKey=weekPicker.value||toIsoWeek(new Date());weekPicker.value=weekKey;weekData={};render();status('Woche wird geladen …','busy');stopWeekListener=onValue(ref(db,`dispoplanPublic/${weekKey}`),snap=>{weekData=snap.val()||{};render();const t=weekData.updatedAt;$('status').title=t?new Date(t).toLocaleString('de-DE'):'';status('Online verbunden · Änderungen werden live synchronisiert.','good');if(new URLSearchParams(location.search).get('print')==='all')printAllDays()},err=>{console.error(err);status('Laden nicht möglich. Bitte Firebase-Projekt und Datenbankregeln prüfen.','error')})}
-async function saveField(el){const path=el.dataset.path;if(!weekKey||!path||path.split('/').some(p=>p==='..'))return;const patch={};patch[path]=el.value;patch.updatedAt=Date.now();ignoreRemoteUntil=Date.now()+700;saveQueue=saveQueue.then(()=>update(ref(db,`dispoplanPublic/${weekKey}`),patch));status('Änderung wird gespeichert …','busy');try{await saveQueue;status('Gespeichert und online synchronisiert.','good')}catch(e){console.error(e);status('Speichern nicht möglich. Bitte Firebase-Regeln prüfen.','error')}}
-async function saveAll(){const container=activeTab==='week'?$ ('weekView'):$('dayView'),patch={};container.querySelectorAll('[data-path]').forEach(el=>{if(el.dataset.path&&!el.dataset.path.split('/').includes('..'))patch[el.dataset.path]=el.value});patch.updatedAt=Date.now();ignoreRemoteUntil=Date.now()+800;try{await update(ref(db,`dispoplanPublic/${weekKey}`),patch);status('Ansicht gespeichert und synchronisiert.','good')}catch(e){console.error(e);status('Speichern nicht möglich. Bitte Firebase-Regeln prüfen.','error')}}
-function reportPage(d){const base=`days/${d.id}`,siteNotes=String(val(`${base}/siteNotes`,'' )||Array.from({length:14},(_,i)=>val(`${base}/siteNotesLines/l${String(i+1).padStart(2,'0')}`,'')).filter(Boolean).join(' ')), rows=vehicleDefaults.map((type,i)=>{const row=`${base}/vehicles/v${String(i+1).padStart(2,'0')}`;return `<tr><td>${esc(val(`${row}/type`,type))}</td><td>${esc(val(`${row}/vehicle`))}</td><td>${esc(val(`${row}/customer`))}</td><td>${esc(val(`${row}/price`))}</td></tr>`}).join('');const subs=subcontractorDefaults.map((n,i)=>`<tr><td>${n}</td><td>${esc(val(`${base}/subcontractors/s${String(i+1).padStart(2,'0')}`))}</td></tr>`).join('');return `<article class="sheet report-day"><div class="sheet-top"><strong class="doc-label">Dispoplan:</strong><span><b>Grube:</b> ${esc(val(`${base}/grube`))}</span><span><b>MiZE:</b> ${esc(val(`${base}/mize`))}</span></div><h2>${d.short} ${esc(val(`${base}/date`,isoDate(d.offset)))}</h2><table class="dispatch-table"><thead><tr><th>Fahrzeugtyp</th><th>Fahrzeug</th><th>Kunde</th><th>Preise</th></tr></thead><tbody>${rows}</tbody></table><h3>Baustellen: ${esc(siteNotes)}</h3><h3>Subunternehmer:</h3><table class="week-table"><tbody>${subs}</tbody></table><p>Grube: ${esc(val(`${base}/grubeNotes`))}　 MiZE: ${esc(val(`${base}/mizeNotes`))}</p><p>Fahrzeugbedarf: 3-Achskipper ${esc(val(`${base}/bedarf/threeAxle`))}　4-Achskipper ${esc(val(`${base}/bedarf/fourAxle`))}　Sattel ${esc(val(`${base}/bedarf/sattel`))}　Gliederzug ${esc(val(`${base}/bedarf/gliederzug`))}　PLAN-B ${esc(val(`${base}/planB`))}</p></article>`}
+const $=id=>document.getElementById(id);
+let activeTab=new URLSearchParams(location.search).get('day')||'mo',weekKey='',weekData={},stopWeekListener=null,saveQueue=Promise.resolve(),ignoreRemoteUntil=0,autoPrintStarted=false;
+const pageParams=new URLSearchParams(location.search);
+if(!['mo','di','mi','do','fr','week'].includes(activeTab))activeTab='mo';
+const weekPicker=$('weekPicker');
+const requestedWeek=pageParams.get('week');
+weekPicker.value=requestedWeek&&/^\d{4}-W\d{2}$/.test(requestedWeek)?requestedWeek:toIsoWeek(new Date());
+
+function toIsoWeek(date){
+const d=new Date(Date.UTC(date.getFullYear(),date.getMonth(),date.getDate()));
+d.setUTCDate(d.getUTCDate()+4-(d.getUTCDay()||7));
+const y=d.getUTCFullYear(),start=new Date(Date.UTC(y,0,1)),w=Math.ceil((((d-start)/86400000)+1)/7);
+return `${y}-W${String(w).padStart(2,'0')}`
+}
+function monday(value){
+const [y,w]=value.split('-W').map(Number),jan4=new Date(Date.UTC(y,0,4)),d=new Date(jan4);
+d.setUTCDate(jan4.getUTCDate()-((jan4.getUTCDay()+6)%7)+(w-1)*7);
+return d
+}
+function isoDate(offset){
+const d=monday(weekKey);d.setUTCDate(d.getUTCDate()+offset);
+return `${d.getUTCFullYear()}-${String(d.getUTCMonth()+1).padStart(2,'0')}-${String(d.getUTCDate()).padStart(2,'0')}`
+}
+function prettyDate(offset){
+const d=monday(weekKey);d.setUTCDate(d.getUTCDate()+offset);
+return new Intl.DateTimeFormat('de-DE',{day:'2-digit',month:'2-digit',year:'numeric',timeZone:'UTC'}).format(d)
+}
+function esc(v){
+return String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))
+}
+function val(path,fallback=''){
+let v=weekData;
+for(const part of path.split('/'))v=v&&typeof v==='object'?v[part]:undefined;
+return v===undefined||v===null?fallback:v
+}
+function status(text,kind=''){
+const box=$('status');box.className='status'+(kind?' '+kind:'');
+box.querySelector('.save-dot').className='save-dot'+(kind?' '+kind:'');
+$('statusText').textContent=text
+}
+function field(path,label,placeholder='',fallback='',type='text'){
+return `<label class="doc-meta"><b>${esc(label)}</b><input type="${type}" data-path="${esc(path)}" value="${esc(val(path,fallback))}" placeholder="${esc(placeholder)}"></label>`
+}
+function tabs(){
+$('tabs').innerHTML=days.map(d=>`<button type="button" class="tab ${activeTab===d.id?'active':''}" data-tab="${d.id}">${d.name}</button>`).join('')+`<button type="button" class="tab ${activeTab==='week'?'active':''}" data-tab="week">Kundenliste / Woche</button><a class="tab" href="dispoplan-suche.html?week=${encodeURIComponent(weekPicker.value)}&day=${encodeURIComponent(activeTab)}">Gespeicherte Daten suchen</a>`
+}
+function dayHtml(d){
+const base=`days/${d.id}`;
+const oldNotes=String(val(`${base}/siteNotes`,'' )).split(/\r?\n/);
+const siteLines=Array.from({length:12},(_,i)=>{
+const path=`${base}/siteNotesLines/l${String(i+1).padStart(2,'0')}`;
+return `<input class="site-line" type="text" data-path="${path}" value="${esc(val(path,oldNotes[i]||''))}" aria-label="Baustellen Zeile ${i+1}">`
+}).join('');
+const rows=vehicleDefaults.map((typ,i)=>{
+const row=`${base}/vehicles/v${String(i+1).padStart(2,'0')}`;
+return `<tr><td><input class="veh-type" data-path="${row}/type" value="${esc(val(`${row}/type`,typ))}" aria-label="Fahrzeugtyp"></td><td><input data-path="${row}/vehicle" value="${esc(val(`${row}/vehicle`))}" aria-label="Fahrzeug"></td><td><input data-path="${row}/customer" value="${esc(val(`${row}/customer`))}" aria-label="Kunde"></td><td><input data-path="${row}/price" value="${esc(val(`${row}/price`))}" aria-label="Preis"></td></tr>`
+}).join('');
+const subs=subcontractorDefaults.map((name,i)=>`<span class="sub-name">${name}:</span><input data-path="${base}/subcontractors/s${String(i+1).padStart(2,'0')}" value="${esc(val(`${base}/subcontractors/s${String(i+1).padStart(2,'0')}`))}" aria-label="${name}">`).join('');
+return `<article class="sheet" data-day="${d.id}">
+<div class="sheet-top"><strong class="doc-label">Dispoplan:</strong><label class="doc-meta"><b>Grube:</b><input data-path="${base}/grube" value="${esc(val(`${base}/grube`))}" aria-label="Grube"></label><label class="doc-meta"><b>MiZE:</b><input data-path="${base}/mize" value="${esc(val(`${base}/mize`))}" aria-label="MiZE"></label></div>
+<div class="date-head"><label class="date-row"><strong>${d.short}</strong><input type="date" data-path="${base}/date" value="${esc(val(`${base}/date`,isoDate(d.offset)))}" aria-label="Datum"></label><span class="column-title">Fahrzeug:</span><span class="column-title">Kunde:</span><span class="column-title">Preise:</span></div>
+<div class="table-scroll"><table class="dispatch-table"><colgroup><col><col><col><col></colgroup><thead><tr><th>Fahrzeugtyp</th><th></th><th></th><th></th></tr></thead><tbody>${rows}</tbody></table></div>
+<div class="bottom-heading"><h3>Baustellen:</h3><h3 class="subunternehmer-heading">Subunternehmer:</h3></div>
+<div class="bottom-content"><div class="site-area"><div class="site-lines">${siteLines}</div></div><div class="sub-area">${subs}</div></div>
+<div class="meta-below"><label>Grube:<input data-path="${base}/grubeNotes" value="${esc(val(`${base}/grubeNotes`))}" aria-label="Grube Details"></label><label>MiZE:<input data-path="${base}/mizeNotes" value="${esc(val(`${base}/mizeNotes`))}" aria-label="MiZE Details"></label></div>
+<div class="need-row"><strong>Fahrzeugbedarf:</strong>${[['threeAxle','3-Achskipper'],['fourAxle','4-Achskipper'],['sattel','Sattel'],['gliederzug','Gliederzug']].map(([k,l])=>`<label class="need-item">${l}:<input data-path="${base}/bedarf/${k}" value="${esc(val(`${base}/bedarf/${k}`))}" aria-label="${l}"></label>`).join('')}<label class="plan-b">PLAN-B:<input data-path="${base}/planB" value="${esc(val(`${base}/planB`))}" aria-label="Plan B"></label></div>
+</article>`
+}
+function renderWeek(){
+const wk=val('week/kw',weekKey);
+const meta=`<div class="week-grid">${[['kw','Kalenderwoche',wk],['period','Zeitraum','von __________ bis __________'],['planner','Disposition',''],['grubeMize','Grube / MiZE',''],['bedarf/threeAxle','3-Achskipper',''],['bedarf/fourAxle','4-Achskipper',''],['bedarf/sattel','Sattel',''],['bedarf/gliederzug','Gliederzug','']].map(([path,label,fallback])=>`<label class="week-field"><strong>${label}</strong><input data-path="week/${path}" value="${esc(val(`week/${path}`,fallback))}"></label>`).join('')}</div>`;
+const customerRows=Array.from({length:9},(_,i)=>{
+const row=`week/customers/r${String(i+1).padStart(2,'0')}`;
+return `<tr>${['Kunde','Ansprechpartner','Telefon','Termin / Notiz'].map((h,j)=>`<td><input data-path="${row}/c${j+1}" value="${esc(val(`${row}/c${j+1}`))}" aria-label="${h}"></td>`).join('')}</tr>`
+}).join('');
+const subRows=Array.from({length:6},(_,i)=>{
+const row=`week/subcontractors/r${String(i+1).padStart(2,'0')}`;
+return `<tr>${['Firma','Ansprechpartner','Telefon','Einsatz / Notiz'].map((h,j)=>`<td><input data-path="${row}/c${j+1}" value="${esc(val(`${row}/c${j+1}`))}" aria-label="${h}"></td>`).join('')}</tr>`
+}).join('');
+$('weekView').innerHTML=`<section class="week-sheet"><h2>KW ${esc(wk)}</h2>${meta}<h3>Subunternehmer / Plan-B</h3><table class="week-table"><thead><tr><th>Firma</th><th>Ansprechpartner</th><th>Telefon</th><th>Einsatz / Notiz</th></tr></thead><tbody>${subRows}</tbody></table><h3>Kundenliste:</h3><table class="week-table"><thead><tr><th>Kunde</th><th>Ansprechpartner</th><th>Telefon</th><th>Termin / Notiz</th></tr></thead><tbody>${customerRows}</tbody></table></section>`
+}
+function render(){
+tabs();
+if(activeTab==='week'){
+$('dayView').classList.add('hidden');$('weekView').classList.remove('hidden');renderWeek()
+}else{
+$('weekView').classList.add('hidden');$('dayView').classList.remove('hidden');$('dayView').innerHTML=dayHtml(days.find(x=>x.id===activeTab))
+}
+}
+function listenWeek(){
+if(stopWeekListener){stopWeekListener();stopWeekListener=null}
+weekKey=weekPicker.value||toIsoWeek(new Date());weekPicker.value=weekKey;weekData={};render();status('Woche wird geladen …','busy');
+stopWeekListener=onValue(ref(db,`dispoplanPublic/${weekKey}`),snap=>{
+weekData=snap.val()||{};render();const t=weekData.updatedAt;$('status').title=t?new Date(t).toLocaleString('de-DE'):'';
+status('Online verbunden · Änderungen werden live synchronisiert.','good');
+if(new URLSearchParams(location.search).get('print')==='all')printAllDays()
+},err=>{console.error(err);status('Laden nicht möglich. Bitte Firebase-Projekt und Datenbankregeln prüfen.','error')})
+}
+async function saveField(el){
+const path=el.dataset.path;if(!weekKey||!path||path.split('/').some(p=>p==='..'))return;
+const patch={};patch[path]=el.value;patch.updatedAt=Date.now();ignoreRemoteUntil=Date.now()+700;
+saveQueue=saveQueue.then(()=>update(ref(db,`dispoplanPublic/${weekKey}`),patch));
+status('Änderung wird gespeichert …','busy');
+try{await saveQueue;status('Gespeichert und online synchronisiert.','good')}
+catch(e){console.error(e);status('Speichern nicht möglich. Bitte Firebase-Regeln prüfen.','error')}
+}
+async function saveAll(){
+const container=activeTab==='week'?$ ('weekView'):$('dayView'),patch={};
+container.querySelectorAll('[data-path]').forEach(el=>{if(el.dataset.path&&!el.dataset.path.split('/').includes('..'))patch[el.dataset.path]=el.value});
+patch.updatedAt=Date.now();ignoreRemoteUntil=Date.now()+800;
+try{await update(ref(db,`dispoplanPublic/${weekKey}`),patch);status('Ansicht gespeichert und synchronisiert.','good')}
+catch(e){console.error(e);status('Speichern nicht möglich. Bitte Firebase-Regeln prüfen.','error')}
+}
+function reportPage(d){
+const base=`days/${d.id}`,siteNotes=String(val(`${base}/siteNotes`,'' )||Array.from({length:12},(_,i)=>val(`${base}/siteNotesLines/l${String(i+1).padStart(2,'0')}`,'')).filter(Boolean).join(' '));
+const rows=vehicleDefaults.map((type,i)=>{const row=`${base}/vehicles/v${String(i+1).padStart(2,'0')}`;return `<tr><td>${esc(val(`${row}/type`,type))}</td><td>${esc(val(`${row}/vehicle`))}</td><td>${esc(val(`${row}/customer`))}</td><td>${esc(val(`${row}/price`))}</td></tr>`}).join('');
+const subs=subcontractorDefaults.map((n,i)=>`<tr><td>${n}</td><td>${esc(val(`${base}/subcontractors/s${String(i+1).padStart(2,'0')}`))}</td></tr>`).join('');
+return `<article class="sheet report-day"><div class="sheet-top"><strong class="doc-label">Dispoplan:</strong><span><b>Grube:</b> ${esc(val(`${base}/grube`))}</span><span><b>MiZE:</b> ${esc(val(`${base}/mize`))}</span></div><h2>${d.short} ${esc(val(`${base}/date`,isoDate(d.offset)))}</h2><table class="dispatch-table"><thead><tr><th>Fahrzeugtyp</th><th>Fahrzeug</th><th>Kunde</th><th>Preise</th></tr></thead><tbody>${rows}</tbody></table><h3>Baustellen: ${esc(siteNotes)}</h3><h3>Subunternehmer:</h3><table class="week-table"><tbody>${subs}</tbody></table><p>Grube: ${esc(val(`${base}/grubeNotes`))}　 MiZE: ${esc(val(`${base}/mizeNotes`))}</p><p>Fahrzeugbedarf: 3-Achskipper ${esc(val(`${base}/bedarf/threeAxle`))}　4-Achskipper ${esc(val(`${base}/bedarf/fourAxle`))}　Sattel ${esc(val(`${base}/bedarf/sattel`))}　Gliederzug ${esc(val(`${base}/bedarf/gliederzug`))}　PLAN-B ${esc(val(`${base}/planB`))}</p></article>`
+}
 function reportHtml(reportDays=days){return reportDays.map(reportPage).join('')}
-function printAllDays(){if(autoPrintStarted)return;autoPrintStarted=true;const printArea=$('printArea');printArea.innerHTML=days.map(d=>dayHtml(d)).join('');document.body.classList.remove('printing-day','printing-week');document.body.classList.add('printing-all');window.addEventListener('afterprint',()=>{document.body.classList.remove('printing-all');printArea.innerHTML=''}, {once:true});setTimeout(()=>window.print(),350)}
-function exportPdf(){if(new URLSearchParams(location.search).get('print')==='all'){printAllDays();return}const printArea=$('printArea');printArea.innerHTML='';document.body.classList.remove('printing-day','printing-week','printing-all');if(activeTab==='week'){document.body.classList.add('printing-week')}else{const source=$('dayView').querySelector('.sheet');if(!source){status('Die ausgewählte Tagesansicht ist nicht verfügbar.','error');return}const copy=source.cloneNode(true),sourceInputs=source.querySelectorAll('input'),copyInputs=copy.querySelectorAll('input');sourceInputs.forEach((el,i)=>{copyInputs[i].value=el.value;copyInputs[i].setAttribute('value',el.value)});printArea.appendChild(copy);document.body.classList.add('printing-day')}window.addEventListener('afterprint',()=>{document.body.classList.remove('printing-day','printing-week');printArea.innerHTML=''}, {once:true});requestAnimationFrame(()=>window.print())}
-function exportWord(){const body=reportHtml(days);const doc=`<!doctype html><html><head><meta charset="utf-8"><style>body{font:11pt Arial;color:#111}h2{font-size:16pt;color:#08055f}h3{font-size:12pt}table{width:100%;border-collapse:collapse;margin:8px 0}td,th{border:1px solid #aaa;padding:5px;text-align:left}th{background:#08055f;color:white}.report-day{page-break-after:always}.sheet-top{display:flex;justify-content:space-between}.doc-label{text-decoration:underline}.week-table{font-size:10pt}</style></head><body>${body}</body></html>`;const blob=new Blob(['\ufeff',doc],{type:'application/msword;charset=utf-8'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=`Sand-Koerner-Dispoplan-${weekKey}.doc`;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)}
-async function saveCompleteWeek(){if(!weekKey)return;const button=$('saveWeekButton');button.disabled=true;button.textContent='Woche wird gespeichert …';status('Alle fünf Tage und die Kundenliste werden gemeinsam als eine Kalenderwoche gespeichert …','busy');try{await saveQueue;const completeWeek=JSON.parse(JSON.stringify(weekData||{}));const visible=$('dayView').classList.contains('hidden')?$('weekView'):$('dayView');visible.querySelectorAll('[data-path]').forEach(el=>{const parts=el.dataset.path.split('/');if(parts[0]==='days'||parts[0]==='week'){let target=completeWeek;for(const part of parts.slice(0,-1)){if(!target[part]||typeof target[part]!=='object')target[part]={};target=target[part]}target[parts[parts.length-1]]=el.value}});completeWeek.updatedAt=Date.now();await set(ref(db,`dispoplanPublic/${weekKey}`),completeWeek);weekData=completeWeek;status(`Die gesamte Woche ${weekKey} wurde gemeinsam gespeichert.`,'good')}catch(e){console.error(e);status('Die ganze Woche konnte nicht gespeichert werden. Bitte Firebase-Regeln prüfen.','error')}finally{button.disabled=false;button.textContent='Ganze Woche speichern'}}
-$('tabs').addEventListener('click',e=>{const b=e.target.closest('[data-tab]');if(!b)return;activeTab=b.dataset.tab;render()});weekPicker.addEventListener('change',listenWeek);document.addEventListener('change',e=>{const el=e.target.closest('[data-path]');if(el)saveField(el)});$('saveButton').addEventListener('click',saveAll);$('saveWeekButton').addEventListener('click',saveCompleteWeek);$('pdfButton').addEventListener('click',exportPdf);$('wordButton').addEventListener('click',exportWord);listenWeek();
+function printAllDays(){
+if(autoPrintStarted)return;autoPrintStarted=true;const printArea=$('printArea');
+printArea.innerHTML=days.map(d=>dayHtml(d)).join('');
+document.body.classList.remove('printing-day','printing-week');document.body.classList.add('printing-all');
+window.addEventListener('afterprint',()=>{document.body.classList.remove('printing-all');printArea.innerHTML=''}, {once:true});
+setTimeout(()=>window.print(),350)
+}
+function exportPdf(){
+if(new URLSearchParams(location.search).get('print')==='all'){printAllDays();return}
+const printArea=$('printArea');printArea.innerHTML='';
+document.body.classList.remove('printing-day','printing-week','printing-all');
+if(activeTab==='week'){document.body.classList.add('printing-week')}
+else{
+const source=$('dayView').querySelector('.sheet');
+if(!source){status('Die ausgewählte Tagesansicht ist nicht verfügbar.','error');return}
+const copy=source.cloneNode(true),sourceInputs=source.querySelectorAll('input'),copyInputs=copy.querySelectorAll('input');
+sourceInputs.forEach((el,i)=>{copyInputs[i].value=el.value;copyInputs[i].setAttribute('value',el.value)});
+printArea.appendChild(copy);document.body.classList.add('printing-day')
+}
+window.addEventListener('afterprint',()=>{document.body.classList.remove('printing-day','printing-week');printArea.innerHTML=''}, {once:true});
+requestAnimationFrame(()=>window.print())
+}
+function exportWord(){
+const body=reportHtml(days);
+const doc=`<!doctype html><html><head><meta charset="utf-8"><style>body{font:11pt Arial;color:#111}h2{font-size:16pt;color:#08055f}h3{font-size:12pt}table{width:100%;border-collapse:collapse;margin:8px 0}td,th{border:1px solid #aaa;padding:5px;text-align:left}th{background:#08055f;color:white}.report-day{page-break-after:always}.sheet-top{display:flex;justify-content:space-between}.doc-label{text-decoration:underline}.week-table{font-size:10pt}</style></head><body>${body}</body></html>`;
+const blob=new Blob(['\ufeff',doc],{type:'application/msword;charset=utf-8'}),url=URL.createObjectURL(blob),a=document.createElement('a');
+a.href=url;a.download=`Sand-Koerner-Dispoplan-${weekKey}.doc`;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)
+}
+async function saveCompleteWeek(){
+if(!weekKey)return;
+const button=$('saveWeekButton');button.disabled=true;button.textContent='Woche wird gespeichert …';
+status('Alle fünf Tage und die Kundenliste werden gemeinsam als eine Kalenderwoche gespeichert …','busy');
+try{
+await saveQueue;
+const completeWeek=JSON.parse(JSON.stringify(weekData||{}));
+const visible=$('dayView').classList.contains('hidden')?$('weekView'):$('dayView');
+visible.querySelectorAll('[data-path]').forEach(el=>{
+const parts=el.dataset.path.split('/');
+if(parts[0]==='days'||parts[0]==='week'){
+let target=completeWeek;
+for(const part of parts.slice(0,-1)){if(!target[part]||typeof target[part]!=='object')target[part]={};target=target[part]}
+target[parts[parts.length-1]]=el.value
+}
+});
+completeWeek.updatedAt=Date.now();
+await set(ref(db,`dispoplanPublic/${weekKey}`),completeWeek);
+weekData=completeWeek;status(`Die gesamte Woche ${weekKey} wurde gemeinsam gespeichert.`,'good')
+}catch(e){console.error(e);status('Die ganze Woche konnte nicht gespeichert werden. Bitte Firebase-Regeln prüfen.','error')}
+finally{button.disabled=false;button.textContent='Ganze Woche speichern'}
+}
+$('tabs').addEventListener('click',e=>{const b=e.target.closest('[data-tab]');if(!b)return;activeTab=b.dataset.tab;render()});
+weekPicker.addEventListener('change',listenWeek);
+document.addEventListener('change',e=>{const el=e.target.closest('[data-path]');if(el)saveField(el)});
+$('saveButton').addEventListener('click',saveAll);
+$('saveWeekButton').addEventListener('click',saveCompleteWeek);
+$('pdfButton').addEventListener('click',exportPdf);
+$('wordButton').addEventListener('click',exportWord);
+listenWeek();
 </script>
 </body>
 </html>
